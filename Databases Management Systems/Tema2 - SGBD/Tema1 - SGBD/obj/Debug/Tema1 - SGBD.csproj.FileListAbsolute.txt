@@ -1,0 +1,22 @@
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csprojAssemblyReference.cache
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Properties.Resources.resources
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csproj.GenerateResource.cache
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csproj.CoreCompileInputs.cache
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.exe.config
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.exe
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.pdb
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.exe
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.pdb
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Form1.resources
+C:\Users\ioana\source\repos\Tema1 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Form2.resources
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.exe.config
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.exe
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\bin\Debug\Tema1 - SGBD.pdb
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csprojAssemblyReference.cache
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Form1.resources
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Form2.resources
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1___SGBD.Properties.Resources.resources
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csproj.GenerateResource.cache
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.csproj.CoreCompileInputs.cache
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.exe
+C:\Users\ioana\source\repos\Tema2 - SGBD\Tema1 - SGBD\obj\Debug\Tema1 - SGBD.pdb

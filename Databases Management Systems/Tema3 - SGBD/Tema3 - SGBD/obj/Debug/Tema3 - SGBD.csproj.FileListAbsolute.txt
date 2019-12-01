@@ -1,0 +1,7 @@
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\bin\Debug\Tema3 - SGBD.exe.config
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\bin\Debug\Tema3 - SGBD.exe
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\bin\Debug\Tema3 - SGBD.pdb
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\obj\Debug\Tema3 - SGBD.csprojAssemblyReference.cache
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\obj\Debug\Tema3 - SGBD.csproj.CoreCompileInputs.cache
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\obj\Debug\Tema3 - SGBD.exe
+D:\SGBD\Tema3 - SGBD\Tema3 - SGBD\obj\Debug\Tema3 - SGBD.pdb
