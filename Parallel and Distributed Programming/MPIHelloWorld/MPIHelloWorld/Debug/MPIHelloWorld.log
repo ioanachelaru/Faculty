@@ -1,0 +1,12 @@
+﻿  pch.cpp
+  MainClass.cpp
+  MPI_Adder.cpp
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder.cpp(34): warning C4018: '<': signed/unsigned mismatch
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder.cpp(38): warning C4018: '<': signed/unsigned mismatch
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder.cpp(207): warning C4018: '<': signed/unsigned mismatch
+  MPI_Adder2.cpp
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder2.cpp(21): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder2.cpp(25): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+d:\uni.anul3.semestrul 1\programare paralela si distribuita\mpihelloworld\mpihelloworld\mpi_adder2.cpp(186): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  MPIHelloWorld.vcxproj -> D:\Uni.Anul3.Semestrul 1\Programare paralela si distribuita\MPIHelloWorld\Debug\MPIHelloWorld.exe
