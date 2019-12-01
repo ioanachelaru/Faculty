@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 6</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <!--Combo boxes-->
+    <div>
+        <select id="cbProducator">
+            <option>producator</option>
+        </select>
+
+        <select id="cbProcesor">
+            <option>procesor</option>
+        </select>
+
+        <select id="cbMemorie">
+            <option>memorie</option>
+        </select>
+
+        <select id="cbCapacitateHDD">
+            <option>capacitate HDD</option>
+        </select>
+
+        <select id="cbPlacaVideo">
+            <option>placa video</option>
+        </select>
+    </div>
+
+    <br>
+
+    <!--The table with notebooks-->
+    <table>
+        <thead>
+            <th>Producator</th>
+            <th>Procesor</th>
+            <th>Memorie</th>
+            <th>Capacitate HDD</th>
+            <th>Placa video</th>
+        </thead>
+        <tbody id="table"></tbody>
+    </table>
+</body>
+
+<script type="text/javascript">
+    let ex6 = new XMLHttpRequest();
+    ex6.open("GET","http://localhost/TemaAjax/ex6/data.php", true);
+    ex6.send();
+
+    aditionalListOfData = [];
+
+    ex6.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            let data = JSON.parse(this.responseText);
+
+            let html = "";
+            let arrayProducator = [];
+            let arrayProcesor = [];
+            let arrayMemorie = [];
+            let arrayCapacitateHDD = [];
+            let arrayPlacaVideo = [];
+
+            for (let i = 0; i < data.length; i++) {
+                html += "<tr>" + "<td>" + data[i].producator + "</td>"
+                    + "<td>" + data[i].procesor + "</td>"
+                    + "<td>" + data[i].memorie + "</td>"
+                    + "<td>" + data[i].capacitate_hdd + "</td>"
+                    + "<td>" + data[i].placa_video + "</td>"
+                    + "</tr>";
+
+                arrayProducator.push(data[i].producator);
+                arrayProcesor.push(data[i].procesor);
+                arrayMemorie.push(data[i].memorie);
+                arrayCapacitateHDD.push(data[i].capacitate_hdd);
+                arrayPlacaVideo.push(data[i].placa_video);
+            }
+            document.getElementById("table").innerHTML += html;
+
+            let setProducator = new Set(arrayProducator);
+            setProducator = Array.from(setProducator);
+
+            html = "";
+            for(i=0; i< setProducator.length; i++){
+                html += "<option>" + setProducator[i] + "</option>";
+            }
+            document.getElementById("cbProducator").innerHTML += html;
+
+            let setProcesor = new Set(arrayProcesor);
+            setProcesor = Array.from(setProcesor);
+
+            html = "";
+            for(i=0; i< setProcesor.length; i++){
+                html += "<option>" + setProcesor[i] + "</option>";
+            }
+            document.getElementById("cbProcesor").innerHTML += html;
+
+            let setMemorie = new Set(arrayMemorie);
+            setMemorie = Array.from(setMemorie);
+
+            html = "";
+            for(i=0; i< setMemorie.length; i++){
+                html += "<option>" + setMemorie[i] + "</option>";
+            }
+            document.getElementById("cbMemorie").innerHTML += html;
+
+            let setCapacitateHDD = new Set(arrayCapacitateHDD);
+            setCapacitateHDD = Array.from(setCapacitateHDD);
+
+            html = "";
+            for(i=0; i< setCapacitateHDD.length; i++){
+                html += "<option>" + setCapacitateHDD[i] + "</option>";
+            }
+            document.getElementById("cbCapacitateHDD").innerHTML += html;
+
+            let setPlacaVideo = new Set(arrayPlacaVideo);
+            setPlacaVideo = Array.from(setPlacaVideo);
+
+            html = "";
+            for(i=0; i< setPlacaVideo.length; i++){
+                html += "<option>" + setPlacaVideo[i] + "</option>";
+            }
+            document.getElementById("cbPlacaVideo").innerHTML += html;
+        }
+    };
+
+    $('select').each(function () {
+        console.log("salut");
+        $(this).on('change',function () {
+            let cbProducator = document.getElementById("cbProducator").value;
+            if(cbProducator === "producator"){cbProducator = "";}
+
+            console.log(cbProducator);
+
+            let cbProcesor = document.getElementById("cbProcesor").value;
+            if(cbProcesor === "procesor"){cbProcesor = "";}
+
+            console.log(cbProcesor);
+
+            let cbMemorie = document.getElementById("cbMemorie").value;
+            if(cbMemorie === "memorie"){cbMemorie = "";}
+
+            console.log(cbMemorie);
+
+            let cbCapacitateHDD = document.getElementById("cbCapacitateHDD").value;
+            if(cbCapacitateHDD === "capacitate HDD"){cbCapacitateHDD = "";}
+
+            console.log(cbCapacitateHDD);
+
+            let cbPlacaVideo = document.getElementById("cbPlacaVideo").value;
+            if(cbPlacaVideo=== "placa video"){cbPlacaVideo = "";}
+
+            ex6.open("GET", "http://localhost/TemaAjax/ex6/filter.php?" + "producator=" + cbProducator + "&procesor=" + cbProcesor + "&memorie=" + cbMemorie
+                + "&capacitate_hdd=" + cbCapacitateHDD + "&placa_video=" + cbPlacaVideo, true);
+            ex6.send('');
+            console.log(cbPlacaVideo);
+            ex6.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(this.responseText, 'asdasdas');
+                    let data = JSON.parse(this.responseText);
+
+                    let html = "";
+
+                    for (let i = 0; i < data.length; i++) {
+                        html += "<tr>" + "<td>" + data[i].producator + "</td>"
+                            + "<td>" + data[i].procesor + "</td>"
+                            + "<td>" + data[i].memorie + "</td>"
+                            + "<td>" + data[i].capacitate_hdd + "</td>"
+                            + "<td>" + data[i].placa_video + "</td>"
+                            + "</tr>";
+                    }
+                    document.getElementById("table").innerHTML = "";
+                    document.getElementById("table").innerHTML += html;
+                }
+
+            }
+        })
+
+    })
+
+</script>
+
+</html>

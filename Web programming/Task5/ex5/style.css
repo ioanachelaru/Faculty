@@ -1,0 +1,41 @@
+ul, #myUL {
+    list-style-type: none;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+
+.caret{
+    font-family: Algerian;
+}
+
+.file {
+    font-family: "Bookman Old Style";
+    background-color: white;
+}
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 3</title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        ol{
+            list-style: none;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Id-uri animale:</p>
+    <ol id="id"></ol>
+
+    <form>
+        <input id= "idAnimal" name="idAnimal" type = "hidden" /><br>
+        Nume:<input id= "nume" name="nume" type = "text" onchange="checkChanged()"/><br>
+        Varsta:<input id= "varsta" name="varsta" type = "number" onchange="checkChanged()"/><br>
+        <br>
+        <input type="submit" name="Update" id="update" value="Update" disabled />
+    </form>
+    <br>
+    <script type="text/javascript">
+        let saved = false;
+        let changed = false;
+
+        let ex3 = new XMLHttpRequest();
+        ex3.open("GET", "http://localhost/TemaAjax/ex3/data.php", true);
+        ex3.send();
+
+        ex3.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                let data = JSON.parse(this.responseText);
+
+                let html = "";
+                for (let i = 0; i < data.length; i++) {
+                    html += "<li onclick='getData(\""+data[i].idAnimal + "\")'>" + data[i].idAnimal + "</li>";
+                }
+                document.getElementById("id").innerHTML += html;
+            }
+        };
+
+        function getData(param) {
+            if (changed && !saved) {
+                alert("Date nesalvate!");
+            }
+            else{
+                    $.ajax({
+                        type: "GET",
+                        url: 'http://localhost/TemaAjax/ex3/atributes.php',
+                        data: {idAnimal: param},
+                        success: function (data) {
+                            let newData = JSON.parse(data);
+                            document.getElementById("idAnimal").value = newData[0].idAnimal;
+                            document.getElementById("nume").value = newData[0].nume;
+                            document.getElementById("varsta").value = newData[0].varsta;
+                        }
+                    });
+                }
+            saved = false;
+            changed = false;
+        }
+
+        function checkChanged() {
+            changed = true;
+            console.log('change');
+            document.getElementById("update").disabled = false;
+        }
+
+        $("#update").click(function(e) {
+            saved = true;
+            e.preventDefault();
+            let idAnimal = $("#idAnimal").val();
+            let nume = $("#nume").val();
+            let varsta = $("#varsta").val();
+            let dataString = 'idAnimal=' + idAnimal + '&nume='+nume + '&varsta=' + varsta;
+            $.ajax({
+                type:'POST',
+                data:dataString,
+                url:'update.php',
+                success:function(data) {
+                    alert(data);
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>

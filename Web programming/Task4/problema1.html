@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 1</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('select').change(function() {
+                let $this = $(this);
+                $this.siblings('select').append($this.find('option:selected')); // append selected option to sibling
+                $('select', $this.parent()).each(function(i,v){ // loop through relative selects
+                    let $options = $(v).find('option'); // get all options
+                    $(this).html($options); // add new options to select
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <select id="list1" onMouseOut="this.size=this.length;">
+            <option>List1_item1</option>
+            <option>List1_item2</option>
+            <option>List1_item3</option>
+            <option>List1_item4</option>
+            <option>List1_item5</option>
+        </select>
+
+        <select id="list2" onMouseOut="this.size=this.length;">
+            <option>List2_item1</option>
+            <option>List2_item2</option>
+            <option>List2_item3</option>
+            <option>List2_item4</option>
+            <option>List2_item5</option>
+        </select>
+    </div>
+
+</body>
+</html>

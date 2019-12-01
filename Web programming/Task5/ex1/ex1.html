@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Problema 1</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+	<style type="text/css">
+		ol{
+			list-style: none;
+		}
+		li:hover{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<p>Plecare</p>
+	<ol id="plecari"></ol>
+	<p>Sosire</p>
+	<ol id="sosiri"></ol>
+
+<script type="text/javascript">
+	let ex1 = new XMLHttpRequest();
+	ex1.open("GET", "http://localhost/TemaAjax/ex1/orase_plecare.php", true);
+	ex1.send();
+
+	aditionalListOfData = [];
+
+	ex1.onreadystatechange = function() {
+		if (this.readyState === 4 && this.status === 200) {
+			let data = JSON.parse(this.responseText);
+
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += "<li onclick='getOrase(\""+data[i].oras_plecare+"\")'>" + data[i].oras_plecare + "</li>";
+			}
+			document.getElementById("plecari").innerHTML += html;
+		}
+	};
+
+	function getOrase(param) {
+		$.ajax({
+			type: "GET",
+			url: 'http://localhost/TemaAjax/ex1/orase_sosire.php',
+			data: {oras_plecare: param},
+			success: function(data){
+				document.getElementById("sosiri").innerHTML = "";
+				let newData = JSON.parse(data);
+				let html = "";
+				for (let i = 0; i < newData.length; i++) {
+					html += "<li>" + newData[i].oras_sosire + "</li>";
+				}
+				document.getElementById("sosiri").innerHTML += html;
+			}
+		});
+	}
+</script>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

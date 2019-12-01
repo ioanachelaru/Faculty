@@ -1,0 +1,22 @@
+.ads li{
+    display: none;
+
+}
+li img{
+    height: 350px;
+}
+a,a:hover,a:current,a:after{
+    color: blue;
+    text-decoration: none;
+    position: center;
+}
+ol{
+    list-style: none;
+    text-align: center;
+}
+li a{
+    display: block;
+}
+.controls{
+    text-align: center;
+}

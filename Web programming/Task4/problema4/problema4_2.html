@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meniu orizontal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        td,th{
+            width: 35%;
+            height: 30px;
+            text-align: center;
+        }
+        tr{
+            border-top: 1px solid gray;
+        }
+        table{
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <th>Fructe</th>
+            <th>Pret</th>
+            <th>Cantitate</th>
+        </tr>
+        <tr>
+            <td>Mere</td>
+            <td>1009</td>
+            <td>108</td>
+        </tr>
+        <tr>
+            <td>Pere</td>
+            <td>104</td>
+            <td>61</td>
+        </tr>
+        <tr>
+            <td>Cirese</td>
+            <td>115</td>
+            <td>161</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        $('th').click(function(){
+            let table = $(this).parents('table').eq(0);
+            let rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()));
+            this.asc = !this.asc;
+            if (!this.asc){rows = rows.reverse()}
+            for (let i = 0; i < rows.length; i++){table.append(rows[i])}
+        });
+        function comparer(index) {
+            return function(a, b) {
+                let valA = getCellValue(a, index), valB = getCellValue(b, index);
+                return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+            }
+        }
+        function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+    </script>
+
+</body>
+</html>

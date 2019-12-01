@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meniu vertical</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        td,th{
+            width: 27%;
+            height: 30px;
+            text-align: center;
+        }
+        tr{
+            border-top: 1px solid gray;
+        }
+        table{
+            border-collapse:collapse;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.myTable th').click(function(){
+
+                let table = $(this).parents('table').eq(0);
+                let rows = table.children('tbody').children('tr');
+
+                let indexSortingLine = $(this).parent().index('tr');
+                let ncol = $(rows[0]).children('td').length;
+
+                this.asc = !this.asc;
+                for(let i=0; i < ncol - 1;i++){
+                    let x =  $(rows[indexSortingLine]).children('td').eq(i).text();
+
+                    for(let j = i+1; j < ncol; j++ ){
+                        let y = $(rows[indexSortingLine]).children('td').eq(j).text();
+
+                        if(this.asc){
+                            if(comp(x,y)>0){ rows = swapColumns(rows,i,j);     }
+
+                        }else{
+                            if(comp(x,y)<0){ rows = swapColumns(rows,i,j);     }
+                        }
+
+                    }
+                }
+                for (let i = 0; i < rows.length; i++){table.append(rows[i])}
+            });
+
+            function swapColumns(rows, coli, colj){
+                for (let i = 0; i < rows.length; i++){
+                    let aux = $(rows[i]).children('td').eq(coli).text();
+                    $(rows[i]).children('td').eq(coli).text( $(rows[i]).children('td').eq(colj).text()    );
+                    $(rows[i]).children('td').eq(colj).text( aux );
+                }
+                return rows;
+            }
+
+            function comp(valA, valB) {
+                return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+            }
+        });
+    </script>
+</head>
+<body>
+    <table class="myTable">
+        <tr>
+            <th>Fructe</th>
+            <td>Mere</td>
+            <td>Pere</td>
+            <td>Cirese</td>
+        </tr>
+        <tr>
+            <th>Pret</th>
+            <td>1009</td>
+            <td>104</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <th>Cantitate</th>
+            <td>108</td>
+            <td>61</td>
+            <td>161</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Problema 2</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+	<style type="text/css">
+		table, td ,th{
+			border: 1px solid black;
+		}
+
+		input{
+			margin: 10px;
+			width: 100px;
+			height: 30px;
+			color: white;
+			background-color: black;
+		}
+
+		input:hover{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<table id="myTable">
+		<thead>
+			<th>Nume</th>
+			<th>Prenume</th>
+			<th>Telefon</th>
+			<th>Email</th>
+		</thead>
+	</table>
+	<input type="button" name="" value="prev" id="prev">
+	<input type="button" name="" value="next" id="next">
+
+	<script type="text/javascript">
+		let ajax = new XMLHttpRequest();
+	    ajax.open("GET", "http://localhost/TemaAjax/ex2/data.php", true);
+	    ajax.send();
+
+		aditionalListOfData = [];
+
+	    let pagina = 0;
+	    document.getElementById("prev").disabled = true;
+
+	    ajax.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            let data = JSON.parse(this.responseText);
+
+            let pagini = [];
+            let j = 0;
+            for (let i = 0; i < data.length / 3; i++){
+            	let k = 0;
+            	let lst = [];
+            	while(k !== 3 && j < data.length){
+            		lst.push(data[j]);
+            		k += 1;
+            		j += 1
+            	}
+            	pagini.push(lst)
+            }
+
+            let lungimePagina = pagini[pagina].length;
+            let html = "";
+
+            for(let i = 0; i < lungimePagina; i++) {
+                html += "<tr>" + "<td>"+data[i].nume+"</td>"+ "<td>"+data[i].prenume+"</td>"+ "<td>"+data[i].telefon +
+						"</td>"+ "<td>"+data[i].email+"</td>" + "</tr>"
+            }
+	        document.getElementById("myTable").innerHTML += html;
+
+
+            document.getElementById("prev").addEventListener("click",function(){
+        		pagina = pagina - 1;
+
+        		if(pagina - 1 < 0){
+        			document.getElementById("prev").disabled = true;
+        			let lungimePagina = pagini[pagina].length;
+
+	        		let htmlnext = "";
+	        		document.getElementById("myTable").innerHTML = htmlnext;
+
+		            htmlnext = "<thead><th>Nume</th><th>Prenume</th><th>Telefon</th><th>Email</th></thead>";
+		            document.getElementById("myTable").innerHTML = htmlnext;
+		            for(i = 0; i < lungimePagina; i++) {
+		                htmlnext += "<tr>" + "<td>"+pagini[pagina][i].nume+"</td>"+ "<td>"+pagini[pagina][i].prenume
+								+"</td>"+ "<td>"+pagini[pagina][i].telefon + "</td>"+ "<td>"+pagini[pagina][i].email+"</td>" + "</tr>"
+		            }
+		            document.getElementById("myTable").innerHTML = htmlnext;
+        		}else{
+        			document.getElementById("prev").disabled = false;
+        			document.getElementById("next").disabled = false;
+        			let lungimePagina = pagini[pagina].length;
+
+	        		let htmlnext = "";
+	        		document.getElementById("myTable").innerHTML = htmlnext;
+
+		            htmlnext = "<thead><th>Nume</th><th>Prenume</th><th>Telefon</th><th>Email</th></thead>";
+		            document.getElementById("myTable").innerHTML = htmlnext;
+		            for(i = 0; i < lungimePagina; i++) {
+		                htmlnext += "<tr>" + "<td>"+pagini[pagina][i].nume+"</td>"+ "<td>"+pagini[pagina][i].prenume
+								+"</td>"+ "<td>"+pagini[pagina][i].telefon + "</td>"+ "<td>"+pagini[pagina][i].email+"</td>" + "</tr>"
+		            }
+		            document.getElementById("myTable").innerHTML = htmlnext;
+        		}
+        	});
+        	document.getElementById("next").addEventListener("click",function(){
+        		pagina = pagina + 1;
+        		if(pagina + 2 > pagini.length){
+        			let lungimePagina = pagini[pagina].length;
+
+	        		let htmlnext = "";
+	        		document.getElementById("myTable").innerHTML = htmlnext;
+
+		            htmlnext = "<thead><th>Nume</th><th>Prenume</th><th>Telefon</th><th>Email</th></thead>";
+		            document.getElementById("myTable").innerHTML = htmlnext;
+		            for(i = 0; i < lungimePagina; i++) {
+		                htmlnext += "<tr>" + "<td>"+pagini[pagina][i].nume+"</td>"+ "<td>"+pagini[pagina][i].prenume
+								+"</td>"+ "<td>"+pagini[pagina][i].telefon + "</td>"+ "<td>"+pagini[pagina][i].email+"</td>" + "</tr>"
+		            }
+		            document.getElementById("myTable").innerHTML = htmlnext;
+        			document.getElementById("next").disabled = true;
+        			
+        		}else{
+        			document.getElementById("next").disabled = false;
+        			document.getElementById("prev").disabled = false;
+        			let lungimePagina = pagini[pagina].length;
+
+	        		let htmlnext = "";
+	        		document.getElementById("myTable").innerHTML = htmlnext;
+
+		            htmlnext = "<thead><th>Nume</th><th>Prenume</th><th>Telefon</th><th>Email</th></thead>";
+		            document.getElementById("myTable").innerHTML = htmlnext;
+		            for(i = 0; i < lungimePagina; i++) {
+		                htmlnext += "<tr>" + "<td>"+pagini[pagina][i].nume+"</td>"+ "<td>"+pagini[pagina][i].prenume
+								+"</td>"+ "<td>"+pagini[pagina][i].telefon + "</td>"+ "<td>"+pagini[pagina][i].email+"</td>" + "</tr>"
+		            }
+		            document.getElementById("myTable").innerHTML = htmlnext;
+        		}
+        	});
+        }
+
+}
+	</script>
+</body>
+</html>

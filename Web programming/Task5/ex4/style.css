@@ -1,0 +1,14 @@
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+input{
+    alignment: center;
+}
