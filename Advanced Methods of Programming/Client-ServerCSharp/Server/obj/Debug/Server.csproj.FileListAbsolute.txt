@@ -1,0 +1,16 @@
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.Properties.Resources.resources
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.csproj.GenerateResource.cache
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\Server.exe.config
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\Server.exe
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\Server.pdb
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\MySql.Data.dll
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\SharedDLL.dll
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\Google.Protobuf.dll
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\SharedDLL.pdb
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\SharedDLL.dll.config
+D:\MPP\Client-ServerCSharp\Server\bin\Debug\MySql.Data.xml
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.csproj.CopyComplete
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.exe
+D:\MPP\Client-ServerCSharp\Server\obj\Debug\Server.pdb
