@@ -1,7 +1,6 @@
 # Babes Bolyai University
 <h3> Computer Science</h3>
 :open_file_folder: 4th Semester:
-
 * [Artificial intelligence](https://github.com/ioanachelaru/Faculty/tree/master/Artificial%20intelligence)
 * [Databases Management Systems](https://github.com/ioanachelaru/Faculty/tree/master/Databases%20Management%20Systems)
 * [Web programming](https://github.com/ioanachelaru/Faculty/tree/master/Web%20programming)
