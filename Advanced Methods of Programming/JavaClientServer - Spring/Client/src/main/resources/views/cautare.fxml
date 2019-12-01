@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="controllers.ControllerCautare" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="468.0"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableView" layoutX="2.0" layoutY="-24.0" prefHeight="376.0" prefWidth="774.0"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="idParticipantColumn" prefWidth="115.99999845027924" text="Id participant" />
+          <TableColumn fx:id="numeParticipantColumn" prefWidth="183.20001983642578" text="Numele participantului" />
+            <TableColumn fx:id="varstaParticipantColumn" prefWidth="168.0" text="Varsta participantului" />
+        </columns>
+      </TableView>
+      <Button onAction="#handleBack" defaultButton="true" layoutX="6.0" layoutY="7.0" mnemonicParsing="false"
+              prefHeight="26.0" prefWidth="77.0" text="Go back" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
