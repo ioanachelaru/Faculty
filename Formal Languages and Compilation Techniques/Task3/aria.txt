@@ -1,0 +1,14 @@
+begin
+real a, p, r, pi, c_1;
+int b;
+start
+b = 45;
+c_1 = "awd@UK h";
+pi = -3.14;
+read(r);
+a = pi*r*r;
+p = 2*pi*r;
+write(a);
+write(p);
+stop
+end

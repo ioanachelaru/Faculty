@@ -1,0 +1,17 @@
+begin
+int a, b;
+start
+while (a != b)
+start
+if (a > b)
+start
+a = a - b;
+stop
+else
+start
+b = b - a;
+stop
+stop
+write(a);
+stop
+end
