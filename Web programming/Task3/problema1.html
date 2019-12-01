@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 1</title>
+
+    <script type="text/javascript">
+        function one2two() {
+            var list1 = document.getElementById("list1");
+            var list2 = document.getElementById("list2");
+            var list1len = list1.length;
+            for (var i = 0; i < list1len; i++) {
+                if (list1.options[i].selected === true) {
+                    var l2len = list2.length;
+                    list2.options[l2len] = new Option(list1.options[i].text);
+                }
+            }
+            for ( i = (list1len -1); i>=0; i--){
+                if (list1.options[i].selected === true ) {
+                    list1.options[i] = null;
+                }
+            }
+        }
+
+        function two2one() {
+            var list1 = document.getElementById("list1");
+            var list2 = document.getElementById("list2");
+            var list2len = list2.length;
+            for ( var i=0; i<list2len ; i++){
+                if (list2.options[i].selected === true ) {
+                    var list1len = list1.length;
+                    list1.options[list1len]= new Option(list2.options[i].text);
+                }
+            }
+            for ( i=(list2len-1); i>=0; i--) {
+                if (list2.options[i].selected === true ) {
+                    list2.options[i] = null;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <select id="list1" onclick="one2two()" onMouseOut="this.size=this.length;">
+        <option>List1_item1</option>
+        <option>List1_item2</option>
+        <option>List1_item3</option>
+        <option>List1_item4</option>
+        <option>List1_item5</option>
+    </select>
+
+    <select id="list2" onclick="two2one()" onMouseOut="this.size=this.length;">
+        <option>List2_item1</option>
+        <option>List2_item2</option>
+        <option>List2_item3</option>
+        <option>List2_item4</option>
+        <option>List2_item5</option>
+    </select>
+
+</body>
+</html>

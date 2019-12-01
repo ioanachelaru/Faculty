@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 2</title>
+
+    <style type="text/css">
+        .content{
+            font: 12px Arial, Helvetica, sans-serif;
+        }
+        span{
+            display:block;
+            margin-left: 30px;
+        }
+        input{
+            width: 205px;
+            padding: 10px 4px 6px 3px;
+            font-size: 14px;
+        }
+        .nameField{
+            display:inline-block;
+            width:80px;
+            text-align: right;
+            padding: 14px 10px 0 0;
+            margin:0 0 7px 0;
+        }
+        .inputField{
+            display:inline-block;
+            margin:0 0 7px 0;
+        }
+        .submit{ margin-left: 35px; }
+    </style>
+
+    <script type="text/javascript">
+        function validate() {
+            var errors = "";
+            var name = document.getElementById("name").value;
+            if (name == null || name === "") {
+                errors = errors + "Name can't be blank\n";
+                document.getElementById("name").style.border = "1px solid red";
+            }
+
+            var nameLen = name.length;
+            for (var i =0; i< nameLen; i++){
+                if ('0123456789'.includes(name[i])) {
+                    errors = errors + "Name can't contain a number\n";
+                    document.getElementById("name").style.border = "1px solid red";
+                }
+            }
+            var date = document.getElementById("date").value;
+            if (date == null || date === "") {
+                errors = errors + "Birth date can't be blank\n";
+                document.getElementById("date").style.border = "1px solid red";
+            }
+
+            var age = document.getElementById("age").value;
+            if (age == null || age === "") {
+                errors = errors + "Age can't be blank\n";
+                document.getElementById("age").style.border = "1px solid red";
+            }
+
+            var strDate = String(date).split('-');
+            var year =  parseInt(strDate[0]);
+            var month = parseInt(strDate[1]);
+            var day = parseInt(strDate[2]);
+            var currentYear = new Date().getFullYear();
+            if (currentYear-year-age > 1 || currentYear-year-age < 0) {
+                errors = errors + "Age may not be correct\n";
+                document.getElementById("age").style.border = "1px solid red";
+            }
+
+            if (currentYear-year-age === 0 ) {
+                var currentMonth = new Date().getMonth() + 1;
+                if (currentMonth < month){
+                    errors = errors + "Age may not be correct\n";
+                    document.getElementById("age").style.border = "1px solid red";
+                }
+                else if(currentMonth == month){
+                    var currentDay = new Date().getDate();
+                    if (currentDay <= day) {
+                        errors = errors + "Age may not be correct\n";
+                        document.getElementById("age").style.border = "1px solid red";
+                    }
+                }
+            }
+            var email = document.getElementById("email"). value;
+            if (email == null || email === "") {
+                errors = errors + "Email address can't be blank\n";
+                document.getElementById("email").style.border = "1px solid red";
+            }
+
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (re.test(String(email).toLowerCase()) === false) {
+                errors = errors + "Email address incorrect\n";
+                document.getElementById("email").style.border = "1px solid red";
+            }
+
+            if (errors.length >0){
+                alert(errors);
+                return false;
+            }
+            else{
+                alert("The data is ready");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validate()">
+        <div class="content">
+        <span>
+            <div class="nameField">Nume si prenume</div>
+            <div class="inputField">
+                <input type="text" id="name" size="30" maxlength="2048">
+            </div>
+        </span>
+
+        <span>
+            <div class="nameField">Data nasterii</div>
+            <div class="inputField">
+                <input type="date" id="date">
+            </div>
+        </span>
+
+        <span>
+            <div class="nameField">Varsta</div>
+            <div class="inputField">
+                <input type="number" max="150" id="age">
+            </div>
+        </span>
+
+        <span>
+            <div class="nameField">Adresa e-mail</div>
+            <div class="inputField">
+                <input type="text" max="30" maxlength="2048" id="email">
+            </div>
+        </span>
+    </div>
+        <input class="submit" type="submit">
+    </form>
+</body>
+</html>

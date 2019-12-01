@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meniu vertical</title>
+
+    <style type="text/css">
+        td,th{
+            width: 27%;
+            height: 30px;
+            text-align: center;
+        }
+        tr{
+            border-top: 1px solid gray;
+        }
+        table{
+            border-collapse:collapse;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function checkOrder(row){
+            let dir = 0;
+            for ( let i = 1; i < row.cells.length - 1; i++)
+                for ( let j = i + 1; j < row.cells.length; j++)
+                    if ((isNaN(Number(row.cells[i].innerHTML))) && row.cells[i].innerHTML.toLowerCase() >
+                        row.cells[j].innerHTML.toLowerCase() || (Number(row.cells[i].innerHTML) >
+                            Number(row.cells[j].innerHTML))) {
+                        dir = dir + 1;
+                    }
+            if (dir === 0)
+                return 0;
+            else if (dir === row.cells.length - 2)
+                return 1;
+            return 2;
+        }
+        function sortTable(){
+            var dir = "asc";
+            let tables = document.getElementsByClassName("myTable");
+            for (let i = 0; i < tables.length; i++){
+                let table = tables[i];
+                let heders = table.getElementsByTagName("th");
+                for (let j = 0; j < heders.length; j++){
+                    heders[j].onclick = function () {
+                        var order = checkOrder(table.rows[j]);
+                        if (order === 0)
+                            dir = "desc";
+                        else dir = "asc";
+                        for (let ii = 1; ii < table.rows[j].cells.length - 1; ii++)
+                            for (let jj = ii + 1; jj < table.rows[j].cells.length; jj++){
+                                if (dir === "asc"){
+                                    if ((isNaN(Number(table.rows[j].cells[ii].innerHTML))) && table.rows[j].cells[ii].innerHTML.toLowerCase() >
+                                        table.rows[j].cells[jj].innerHTML.toLowerCase() || (Number(table.rows[j].cells[ii].innerHTML) >
+                                        Number(table.rows[j].cells[jj].innerHTML))){
+                                        for (let row = 0; row < table.rows.length; row++){
+                                            let temp = table.rows[row].cells[ii].innerHTML;
+                                            table.rows[row].cells[ii].innerHTML = table.rows[row].cells[jj].innerHTML;
+                                            table.rows[row].cells[jj].innerHTML = temp;
+                                        }
+                                    }
+                                }
+                                else if (dir === "desc"){
+                                    if ((isNaN(Number(table.rows[j].cells[ii].innerHTML))) && table.rows[j].cells[ii].innerHTML.toLowerCase() <
+                                        table.rows[j].cells[jj].innerHTML.toLowerCase() || (Number(table.rows[j].cells[ii].innerHTML) <
+                                        Number(table.rows[j].cells[jj].innerHTML))){
+                                        for (let row = 0; row < table.rows.length; row++){
+                                            let temp = table.rows[row].cells[ii].innerHTML;
+                                            table.rows[row].cells[ii].innerHTML = table.rows[row].cells[jj].innerHTML;
+                                            table.rows[row].cells[jj].innerHTML = temp;
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                    }
+                }
+            }
+
+    </script>
+</head>
+<body>
+    <table class="myTable">
+        <tr>
+            <th onclick="sortTable()">Fructe</th>
+            <td>Mere</td>
+            <td>Pere</td>
+            <td>Cirese</td>
+        </tr>
+        <tr>
+            <th onclick="sortTable()">Pret</th>
+            <td>1009</td>
+            <td>104</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <th onclick="sortTable()">Cantitate</th>
+            <td>108</td>
+            <td>61</td>
+            <td>161</td>
+        </tr>
+    </table>
+</body>
+</html>
