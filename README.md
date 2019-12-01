@@ -12,3 +12,4 @@
 * [Robotic Process Automation](https://github.com/ioanachelaru/Faculty/tree/master/Robotic%20Process%20Automation)
 * [Formal Languages and Compilation Techniques](https://github.com/ioanachelaru/Faculty/tree/master/Formal%20Languages%20and%20Compilation%20Techniques)
 * [Parallel and Distributed Programming](https://github.com/ioanachelaru/Faculty/tree/master/Parallel%20and%20Distributed%20Programming)
+* [Mobile Programming](https://github.com/ioanachelaru/Faculty/tree/master/Mobile%20Programming)
