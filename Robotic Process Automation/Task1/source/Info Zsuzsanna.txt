@@ -1,0 +1,77 @@
+Buna ziua,
+
+Mai jos sunt linkurile. Pe de o parte liste nu e exhaustiva, exista mult
+mai multe metode in Machine Learning si Inteligenta Artificiala, pe de
+alta parte nu as vrea nici sa te sperii de lungimea listei. Nu trebuie sa
+citesti tot, scopul e sa iti faci o idee sa vezi daca ar fi ceva ce sa-ti
+placa.
+
+- Niste pagini Wikipedia (partea mai importanta ar fi acele
+liste/enumeratii de domenii/metode):
+	- https://en.wikipedia.org/wiki/Machine_learning#Approaches - lista cu
+approaches
+	- https://en.wikipedia.org/wiki/Bio-inspired_computing - partea cu Areas
+of research
+
+- Seria Machine Learning is Fun:
+	- https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471 -
+prima parte, contine linkuri spre celelalte parti
+
+- Seria Natural Languge Processing is Fun:
+	-
+https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
+- prima parte, contine link spre partea a 2-a
+
+- Association Rule Mining
+	- https://blogs.oracle.com/bigdata/association-rules-machine-learning
+	-
+https://mapr.com/blog/association-rule-mining-not-your-typical-data-science-algorithm/
+	-
+https://algobeans.com/2016/04/01/association-rules-and-the-apriori-algorithm/
+
+- Decision Trees
+	- https://blogs.oracle.com/bigdata/decision-trees-machine-learning
+	- https://magoosh.com/data-science/how-to-use-decision-trees-the-right-way/
+	- https://www.edureka.co/blog/decision-trees/
+	- https://algobeans.com/2016/07/27/decision-trees-tutorial/
+
+- K-mean Clustering
+	- https://blogs.oracle.com/bigdata/k-means-clustering-machine-learning
+	- https://www.edureka.co/blog/k-means-clustering-algorithm/
+	- https://algobeans.com/2015/11/30/k-means-clustering-laymans-tutorial/
+
+- Self-organizing maps
+	- https://algobeans.com/2017/11/02/self-organizing-map/
+
+- Support Vector Machines
+	-
+http://www.win-vector.com/blog/2011/10/kernel-methods-and-support-vector-machines-de-mystified/#more-1804
+	- https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93
+	-
+https://medium.com/@LSchultebraucks/introduction-to-support-vector-machines-9f8161ae2fcb
+
+- Reinforcement Learning
+	-
+https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419
+	- https://skymind.ai/wiki/deep-reinforcement-learning
+	-
+https://towardsdatascience.com/self-learning-ai-agents-part-i-markov-decision-processes-baf6b8fc4c5f
+
+- K nearest Negihbor
+	-
+https://algobeans.com/2016/09/14/k-nearest-neighbors-anomaly-detection-tutorial/
+
+- Random Forest + Ensemble learning
+	- https://algobeans.com/2016/08/25/random-forest-tutorial/
+	-
+https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
+	- https://www.toptal.com/machine-learning/ensemble-methods-machine-learning
+
+- Genetic Algorithms
+	-
+https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3
+	-
+https://blog.spdigital.io/a-gentle-introduction-to-genetic-algorithms-c7c9ad60569
+
+O zi frumoasa,
+Onet-Marian Zsuzsanna

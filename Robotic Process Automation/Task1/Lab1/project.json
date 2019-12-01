@@ -1,0 +1,28 @@
+{
+  "name": "Lab1",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.5.4]",
+    "UiPath.Mail.Activities": "[1.4.1]",
+    "UiPath.System.Activities": "[19.4.1]",
+    "UiPath.UIAutomation.Activities": "[19.4.2]"
+  },
+  "schemaVersion": "3.2",
+  "studioVersion": "19.4.5.3",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ]
+  },
+  "projectType": "Workflow",
+  "libraryOptions": {
+    "includeOriginalXaml": false,
+    "privateWorkflows": []
+  },
+  "webServices": []
+}

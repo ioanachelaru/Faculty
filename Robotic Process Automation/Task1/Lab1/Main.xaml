@@ -1,0 +1,144 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654.4,716.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Files management" sap:VirtualizedContainerService.HintSize="614.4,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 160,107.7 160,143.6</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">60,143.6</av:Point>
+          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Move files from sources to destination" sap:VirtualizedContainerService.HintSize="551.2,1261.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="s:String[]" Name="NumberOfFiles" />
+          <Variable x:TypeArguments="x:Int32" Name="Counter" />
+          <Variable x:TypeArguments="x:String" Default="D:\Uni.Anul3.Semestrul1\Automatizarea-proceselor-de-business\Lab1\source" Name="SourcePath" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="528.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="s:String[]">[NumberOfFiles]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="s:String[]">[directory.GetFiles(SourcePath)]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="528.8,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[NumberOfFiles.Count.ToString + &quot; files exiting in directory.&quot;]" TopMost="True" />
+        <Assign sap:VirtualizedContainerService.HintSize="528.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">0</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="528.8,656" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[NumberOfFiles]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:String">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512.8,521.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If Condition="[item.Contains(&quot;Raport&quot;)]" sap:VirtualizedContainerService.HintSize="490.4,396.8" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="265.6,247.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MoveFile ContinueOnError="{x:Null}" Destination="D:\Uni.Anul3.Semestrul1\Automatizarea-proceselor-de-business\Lab1\destination" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="243.2,22.4" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="False" Path="[item]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Counter+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <ui:Continue sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[Counter]" sap:VirtualizedContainerService.HintSize="528.8,140.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+          <Switch.Default>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[Counter.ToString + &quot; files were moved.&quot;]" TopMost="True" />
+          </Switch.Default>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="0" Buttons="Ok" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;There are no files&quot;]" TopMost="True" />
+        </Switch>
+      </Sequence>
+    </FlowStep>
+  </Flowchart>
+</Activity>

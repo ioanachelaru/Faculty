@@ -1,0 +1,234 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="IterateFiles" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="FilesToIterate" Type="InArgument(s:String[])" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>612,1998.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="IterateFiles" sap:VirtualizedContainerService.HintSize="475.2,2008" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="452.8,1883.2" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[FilesToIterate]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="436.8,1748.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Name="Files" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="414.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item]" />
+            <ui:OpenApplication ApplicationWindow="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" Arguments="[item]" DisplayName="Open Application 'explorer.exe'" FileName="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" sap:VirtualizedContainerService.HintSize="414.4,248" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="404b336da982691432334cf4000803fd" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='*Adobe Acrobat Reader DC' /&gt;">
+              <ui:OpenApplication.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,100.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:OpenApplication.Body>
+            </ui:OpenApplication>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="414.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="336.8,212.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[item.ToString]" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'AcroRd32.exe Your'" sap:VirtualizedContainerService.HintSize="414.4,1140.8" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a4c756cbdb82542446b2a8c51d06e6c7" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Your Payment Receipt*' /&gt;">
+              <ui:WindowScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="359.2,993.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Extract specific element" sap:VirtualizedContainerService.HintSize="336.8,868.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="period" />
+                        <Variable x:TypeArguments="x:String" Name="price" />
+                        <Variable x:TypeArguments="x:String" Name="location" />
+                        <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="places" />
+                        <Variable x:TypeArguments="x:Int32" Default="1" Name="counter" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'text  Paris'" sap:VirtualizedContainerService.HintSize="314.4,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
+                        <ui:GetOCRText.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:GoogleOCR FilterRegion="{x:Null}" Text="{x:Null}" AllowedCharacters="" DeniedCharacters="" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_7" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" />
+                          </ActivityFunc>
+                        </ui:GetOCRText.OCREngine>
+                        <ui:GetOCRText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e1e31edb31e311216af07c3c2c2f5b40" Selector="&lt;wnd aaname='Panoul de documente' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='2   nights   in   Paris   ' role='text' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:GetOCRText.Target>
+                        <ui:GetOCRText.Text>
+                          <OutArgument x:TypeArguments="x:String">[location]</OutArgument>
+                        </ui:GetOCRText.Text>
+                      </ui:GetOCRText>
+                      <AddToCollection x:TypeArguments="x:String" Collection="[places]" DisplayName="Add location to places" sap:VirtualizedContainerService.HintSize="314.4,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[location]" />
+                      <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'text  2 nights in Paris'" sap:VirtualizedContainerService.HintSize="314.4,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_8">
+                        <ui:GetOCRText.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:GoogleOCR FilterRegion="{x:Null}" Text="{x:Null}" AllowedCharacters="" DeniedCharacters="" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_8" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" />
+                          </ActivityFunc>
+                        </ui:GetOCRText.OCREngine>
+                        <ui:GetOCRText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="6ceda5f6981f550ede784153acb95979" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Your Payment Receipt (1).pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Panoul de documente' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='2   nights   in   Paris   ' role='text' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:GetOCRText.Target>
+                        <ui:GetOCRText.Text>
+                          <OutArgument x:TypeArguments="x:String">[period]</OutArgument>
+                        </ui:GetOCRText.Text>
+                      </ui:GetOCRText>
+                      <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'text  €248.0'" sap:VirtualizedContainerService.HintSize="314.4,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_9">
+                        <ui:GetOCRText.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:GoogleOCR FilterRegion="{x:Null}" Text="{x:Null}" AllowedCharacters="" DeniedCharacters="" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_9" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" />
+                          </ActivityFunc>
+                        </ui:GetOCRText.OCREngine>
+                        <ui:GetOCRText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d3040e3562439b407ee748a2046b50fb" Selector="&lt;wnd aaname='Panoul de documente' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='text' aastate='read only' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:GetOCRText.Target>
+                        <ui:GetOCRText.Text>
+                          <OutArgument x:TypeArguments="x:String">[price]</OutArgument>
+                        </ui:GetOCRText.Text>
+                      </ui:GetOCRText>
+                      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="314.4,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="D:\Uni.Anul3.Semestrul1\Automatizarea-proceselor-de-business\Lab2\places.xlsx">
+                        <ui:ExcelApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,440.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Int32" Name="count" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExcelWriteCell Cell="[&quot;A&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Costs" Text="[period.ToString]" />
+                              <ui:ExcelWriteCell Cell="[&quot;B&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Costs" Text="[price.ToString]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[counter+1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ExcelApplicationScope.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:ExcelApplicationScope>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ui:WindowScope.Body>
+            </ui:WindowScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
