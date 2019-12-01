@@ -1,0 +1,11 @@
+BEGIN
+int n , suma = 0 , numar ;
+START
+for ( int i = 1 ; i <= n ; i = i + 1 )
+START
+read ( numar ) ;
+suma = suma + numar ;
+STOP
+write ( suma ) ;
+STOP
+END

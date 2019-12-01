@@ -1,0 +1,13 @@
+BEGIN
+real a , p , r , pi, x ;
+char s = "$%)?><AWDFGthdse_s:=ef%^&" ;
+START
+pi = 3.14 ;
+x = 0B001 ;
+read ( r ) ;
+a = pi * r * r ;
+p = 2 * pi * r ;
+write ( a ) ;
+write ( p ) ;
+STOP
+END

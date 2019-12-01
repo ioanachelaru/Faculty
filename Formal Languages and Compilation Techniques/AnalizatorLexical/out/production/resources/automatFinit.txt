@@ -1,0 +1,6 @@
+A,initial
+B,final
+A,a,B
+A,d,C
+B,b,C
+C,c,B
