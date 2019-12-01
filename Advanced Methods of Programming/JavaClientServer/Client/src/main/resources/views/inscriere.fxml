@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerInscriere">
+   <children>
+      <TextField fx:id="numeParticipant" layoutX="196.0" layoutY="32.0" prefHeight="26.0" prefWidth="149.0" promptText="Nume participant.." AnchorPane.leftAnchor="196.0">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField fx:id="varstaParticipant" layoutX="394.0" layoutY="31.0" prefHeight="26.0" prefWidth="149.0" promptText="Varsta participant.." AnchorPane.rightAnchor="55.0">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Button layoutX="220.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleInscrie" prefHeight="31.0" prefWidth="160.0" text="Finalizeaza inscrierea" />
+      <TableView fx:id="tableView" layoutX="128.0" layoutY="138.0" prefHeight="200.0" prefWidth="266.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+        <columns>
+          <TableColumn fx:id="idProbaColumn" prefWidth="199.0" text="Id proba" />
+          <TableColumn fx:id="stilColumn" prefWidth="199.0" text="Stil" />
+            <TableColumn fx:id="distantaColumn" prefWidth="199.0" text="Distanta" />
+        </columns>
+      </TableView>
+      <Button defaultButton="true" layoutX="37.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="31.0" prefWidth="77.0" text="Go back" AnchorPane.leftAnchor="55.0" />
+   </children>
+</AnchorPane>
