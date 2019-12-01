@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="298.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id carte" />
+          <TableColumn prefWidth="75.0" text="Id exemplar" />
+            <TableColumn prefWidth="75.0" text="Titlu" />
+            <TableColumn prefWidth="75.0" text="Autor" />
+        </columns>
+      </TableView>
+      <TextField layoutX="377.0" layoutY="61.0" promptText="Cod carte.." />
+      <TextField layoutX="377.0" layoutY="111.0" promptText="Titlu.." />
+      <TextField layoutX="377.0" layoutY="161.0" promptText="Autor.." />
+      <Button layoutX="390.0" layoutY="222.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="121.0" text="Imprumuta" />
+   </children>
+</AnchorPane>
