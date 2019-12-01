@@ -10,3 +10,4 @@
 
 :open_file_folder: Sem 5:
 * [Robotic Process Automation](https://github.com/ioanachelaru/Faculty/tree/master/Robotic%20Process%20Automation)
+* [Formal Languages and Compilation Techniques](https://github.com/ioanachelaru/Faculty/tree/master/Formal%20Languages%20and%20Compilation%20Techniques)
