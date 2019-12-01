@@ -1,0 +1,9 @@
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\bin\Debug\Client-ServerCSharp.exe.config
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\bin\Debug\Client-ServerCSharp.exe
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\bin\Debug\Client-ServerCSharp.pdb
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client-ServerCSharp.csprojAssemblyReference.cache
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client_ServerCSharp.Properties.Resources.resources
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client-ServerCSharp.csproj.GenerateResource.cache
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client-ServerCSharp.csproj.CoreCompileInputs.cache
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client-ServerCSharp.exe
+D:\MPP\Client-ServerCSharp\Client-ServerCSharp\obj\Debug\Client-ServerCSharp.pdb

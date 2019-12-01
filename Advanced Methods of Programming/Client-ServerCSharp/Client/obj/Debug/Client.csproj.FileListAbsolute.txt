@@ -1,0 +1,17 @@
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.Properties.Resources.resources
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.csprojAssemblyReference.cache
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.Form1.resources
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.Form2.resources
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.Form3.resources
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.Form4.resources
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\Client.exe.config
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\Client.exe
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\Client.pdb
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\SharedDLL.dll
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\SharedDLL.pdb
+D:\MPP\Client-ServerCSharp\Client\bin\Debug\SharedDLL.dll.config
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.csproj.CopyComplete
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.exe
+D:\MPP\Client-ServerCSharp\Client\obj\Debug\Client.pdb
