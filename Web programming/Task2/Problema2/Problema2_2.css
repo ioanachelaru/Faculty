@@ -1,0 +1,52 @@
+.Header{
+    background-color: red;
+    height: 20%;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Nav{
+    float: left;
+    background-color: yellow;
+    position: relative;
+    height: 72%;
+}
+
+.Nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.Nav ul li {
+    padding: 5px;
+    display: block;
+    border-bottom:1px solid black;
+    text-align:center;
+}
+
+.Div{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    position: relative;
+    height: 72%;
+}
+
+.Footer{
+    display: flex;
+    align-items: center;
+    background-color: lightsalmon;
+    position: relative;
+    height: 8%;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}

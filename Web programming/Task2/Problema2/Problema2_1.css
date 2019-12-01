@@ -1,0 +1,54 @@
+ .Header{
+     background-color: red;
+     height: 20%;
+     overflow: hidden;
+     width: 100%;
+     vertical-align: middle;
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+
+.Nav{
+    background-color: yellow;
+    position: relative;
+    height: 6%;
+}
+
+.Nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.Nav ul li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    border-right:1px solid black;
+    /* margin:2px; */
+    padding:13px;
+    text-align:center;
+}
+
+.Div{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    position: relative;
+    height: 66%;
+}
+
+.Footer{
+    display: flex;
+    align-items: center;
+    background-color: lightsalmon;
+    position: relative;
+    height: 8%;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}

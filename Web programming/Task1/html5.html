@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ro">
+ <head>
+    <meta charset="UTF-8">
+    <title>Înscriere</title>
+ </head>
+
+ <body>
+ <p ><img src="bannerbicikli.png" alt="Copii in drumetie" height="330" width="1020" title="Copii veseli"></p>
+ <h2 >Formular înscriere tabără de vară</h2>
+ <form>
+      <table>
+
+          <!-- Pasaj initial-->
+          <tr>
+              <td>Completați și prezentați acest formular până în data de 20 iunie liderului dvs. însoțitor blah-blah</td>
+          </tr>
+
+          <!--Tabel date minor-->
+          <tr>
+              <td>
+                <table >
+
+                    <!--Date minor-->
+                    <tr>
+                         <th colspan="2" >Date minor</th>
+
+                    </tr>
+
+                    <!--Numele si prenume-->
+                    <tr>
+                        <td>Nume și prenume</td>
+                        <td><input type="text" name="Nume" maxlength="30" placeholder="Numele" />
+                        <input type="text" name="Prenume" maxlength="30" placeholder="Prenumele" />
+                            <i>(Maxim 30+30 de caractere a-z și A-Z)</i></td>
+                    </tr>
+
+                    <!--Sexul minorului-->
+                    <tr>
+                        <td >Sex</td>
+                        <td>
+                            Feminin<label>
+                            <input type="radio" name="Sex" value="Feminin" checked="" />
+                        </label>
+                            Masculin<label>
+                            <input type="radio" name="Sex" value="Masculin" />
+                        </label>
+                        </td>
+                    </tr>
+
+                    <!--Varsta Radio Buttons-->
+                    <tr>
+                        <td >În ce grupă de vârstă se încadrează minorul?</td>
+                        <td>
+                            <input type="number" name="varsta" min="5" max="17" step="1">
+                        </td>
+                    </tr>
+
+                    <!--Alergie Radio Buttons-->
+                    <tr>
+                        <td>Are minorul vreo alergie?</td>
+                        <td>
+                            Da <label>
+                            <input type="radio" name="Alergie" value="Da"/>
+                        </label>
+                            Nu <label>
+                            <input type="radio" name="Alergie" value="Nu" checked=""/>
+                        </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >Dacă da, specificați: <label>
+                            <input type="text" name="Alergie" maxlength="50">
+                        </label></td>
+                    </tr>
+
+                    <!--Tratament Radio Button-->
+                    <tr>
+                        <td>Urmează mirorul vreun tratament medical <br> de care ar trebui să luăm la cunoștință?</td>
+                        <td>
+                            Da <label>
+                            <input type="radio" name="Tratament" value="Da"/>
+                        </label>
+                            Nu <label>
+                            <input type="radio" name="Tratament" value="Nu" checked=""/>
+                        </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Dacă da, specificați: <label>
+                            <textarea name="Specificatii" rows="4" cols="30"></textarea>
+                        </label></td>
+                    </tr>
+
+                    <!--Pasiunile minorului-->
+                    <tr>
+                        <td >Oferiți-ne câteva informații <br> despre pasiunile minorului</td>
+                        <td>
+                            Desenul
+                            <label>
+                                <input type="checkbox" name="Desenul" value="Desen" />
+                            </label>
+                            Cântatul
+                            <label>
+                                <input type="checkbox" name="Cantatul" value="Cantat" />
+                            </label>
+                            <br/>
+                            Dansul
+                            <label>
+                                <input type="checkbox" name="Dansul" value="Dans" />
+                            </label>
+                            Pictura
+                            <label>
+                                <input type="checkbox" name="Pictura" value="Pictura" />
+                            </label>
+                            <br/>
+                            Altele
+                            <label>
+                                <input type="checkbox" name="Altele" value="Altele">
+                            </label>
+                            <label>
+                                <input type="text" name="Altele" maxlength="30" />
+                            </label>
+                        </td>
+                    </tr>
+
+                    <!--Conditii dormit minor-->
+                    <tr>
+                        <td>În ce condiții poate dormi minorul?</td>
+                        <td>
+                            <label>
+                                <select multiple>
+                                    <option value="Cort" selected>Cort</option>
+                                    <option value="Interiosr" selected>Interior</option>
+                                    <option value="Adapost">Adapost</option>
+                                    <option value="Sub cerul liber">Sub cerul liber</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+              </td>
+          </tr>
+
+          <!--Tabel date reprezentant legal-->
+          <tr>
+              <td>
+                  <table>
+
+                      <!--Date reprezentant-->
+                      <tr>
+                          <th colspan="2">Date reprezentant legal</th>
+                      </tr>
+
+                      <!--Numele si prenume-->
+                      <tr>
+                          <td >Nume și prenume</td>
+                          <td><input type="text" name="Nume" maxlength="30" placeholder="Numele">
+                              <input type="text" name="Prenume" maxlength="30" placeholder="Prenumele">
+                              <i>(Maxim 30+30 de caractere a-z și A-Z)</i></td>
+                      </tr>
+
+                      <!--Numar de telefon-->
+                      <tr>
+                          <td >Numar de telefon</td>
+                          <td><input type="text" name="Telefon" maxlength="10" placeholder="ex:0784600406">
+                              <i>(Maxim 10 cifre)</i></td>
+                      </tr>
+
+                      <!--Adresa de email-->
+                      <tr>
+                          <td >Adresa de e-mail</td>
+                          <td><input type="email" name="Email" placeholder="someone@example.com"></td>
+                      </tr>
+
+                      <!-- Adresa -->
+                      <tr>
+                          <td >Adresa</td>
+                          <td><label>
+                              <textarea name="Adresa" rows="4" cols="30" placeholder="Tara,judetul,orasul, strada, nr bloc,scara,etc"></textarea>
+                          </label></td>
+                      </tr>
+
+                  </table>
+              </td>
+          </tr>
+
+      </table>
+
+     <p><strong>În acest an, peste 100 de cercetaşi din centrul local AMD Pildești, cu vârste cuprinse între 5 şi 30 de ani, vor lua parte la Campul centrului
+         local, care va avea loc în comuna Cristian, Brașov. Pentru că la cercetaşi toate activităţile vin cu o poveste, cadrul simbolic (tema taberei)
+         din acest an este inspirat de Jocurile Olimpice. Toate activităţile au primit denumiri sugestive şi totul se va desfăşura sub forma unei competiţii.
+         <br><br>Programul se va întinde pe parcursul celor 7 zile petrecute în natură. Acesta va include două zile de construcţii, timp în care va fi ridicat campul,
+         se vor construi adăposturi de soare sau în caz de ploaie, duşuri sau locuri pentru spălat vase, dar şi un catarg unde se va ridica în fiecare dimineaţă
+         steagul (ONCR). Şi aceste activităţi au primit denumiri speciale, precum 500m noduri, săpături viteză sau construcţia artistică, activităţile fiind
+         transformate în probe, prin care cercetaşii, organizaţi în patrule (echipe) pot câştiga puncte.</strong></p>
+
+     <p><strong>Programul va mai cuprinde şi 1, 2 sau 3 zile de hike, care în acest an a primit denumirea de triatlon, şi are 3 probe principale:</strong></p>
+     <ol type="I">
+         <li>Hiking - urcatul pe munte</li>
+         <li>Caving - explorarea peșterilor</li>
+         <li>Surviving - supraviețuire</li>
+     </ol>
+     <p><strong>Fiecare din aceste probe vor fi organizate în funcţie de specificul şi nevoile prezente în fiecare ramură de vârstă, mai exact:</strong></p>
+     <ul>
+         <li>Lupișori (6-11 ani)</li>
+         <li>Temerari (11-14 ani)</li>
+         <li>Exploratori (15-18 ani)</li>
+     </ul>
+
+     <p ><strong>
+         Totodată, va mai fi o zi de olimpiadă, în cadrul căreia va avea loc competiţia propiu-zisă, unde cercetaşii se vor întrece în probe
+         precum ski pe iarbă, aruncarea bocancului, trasee cu obstacole sau căţărarea viteză. <br> Pentru cei mici, s-au pregătit şi câteva ateliere,
+         unde îşi vor descoperi talentele muzicale, de pictură sau vor învăţa despre acordarea primului ajutor în caz de nevoie. O zi va fi
+         adresată unui joc comun, de mare <br> întindere, la care vor participa toţi cei prezenţi în camp, iar ziua de sâmbătă va fi ziua porţilor
+         deschise, în care cercetaşii aşteaptă vizita părinţilor şi a prietenilor, aceasta fiind urmată de seara farfuriilor <br> deschise, în cadrul
+         căreia patrulele de cercetaşi îşi vor etala abilităţile într-ale gătitului. <br>
+         Ultima seară de camp este, tradiţional, concretizată prin fiesta, în cadrul căreia vor participa toţi cercetaşii prezenţi în camp şi vor cânta
+         cântece de munte în faţa unui foc mare de tabără.
+     </strong></p>
+
+     <p><strong>Cei mici trebuie să aducă cu ei următoarele:</strong></p>
+     <ol start="1">
+         <li>Pelerină de ploaie</li>
+         <li>Gamela:
+             <ol type="a">
+                 <li>Lingură</li>
+                 <li>Furculiță</li>
+                 <li>Cuțit</li>
+                 <li>Bol</li>
+                 <li>Cană</li>
+             </ol>
+         </li>
+         <li>Briceag</li>
+         <li>Bocanci de munte</li>
+         <li>Haine potrivite vremii</li>
+         <li>Șapcă/pălărie</li>
+         <li>Cremă de protecție solară</li>
+         <li>Protecie împotriva țânțarilor</li>
+     </ol>
+
+     <p><strong>
+         Pentru mai multe informații despre noi și activitățile noastre ne găsiți
+         <a href="https://www.facebook.com/pg/cercetasii.amdpildesti/posts/" target="_blank">aici</a>.
+         <br>
+         De asemenea ne puteți scrie la adresa <input type="text" name="adresa" value="amd_cerce@gmail.com" readonly><br>
+         Sau la numărul de telefon <input type="text" name="telefon" value="0784608406" disabled><br>
+     </strong></p>
+
+     <div>
+         <input type="submit" name="submit" value="Submit">
+         <input type="reset" name="refresh" value="Refresh">
+     </div>
+
+  </form>
+
+ </body>
+
+</html>

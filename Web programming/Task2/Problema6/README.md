@@ -1,0 +1,3 @@
+  Stilizati mai multe input-uri de tip text astfel incat completarea acestora sa se faca asemanator figurii de mai jos.
+https://www.cs.ubbcluj.ro/~bufny/wp-content/uploads/css-pr6.png                                                                           
+  Input-urile vor accepta un caracter per “patratica”. Nu este permisa folosirea mai multor input-uri pentru acelasi camp (pentru nume spre exemplu). Atributele CSS folosite (width, font-family, font-size, etc) se vor combina/corespunzator cu atributele HTML (maxlength) pentru un efect corespunzator. Nu se vor accepta mai multe caractere in input decat se pot introduce “vizual”.

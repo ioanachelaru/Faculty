@@ -1,0 +1,54 @@
+.Header{
+    background-color: red;
+    height: 100px;
+    text-align: center;
+}
+
+.Menu{
+    float: left;
+    background-color: yellow;
+    text-align: center;
+    height: 25px;
+    min-height: calc(100vh - 160px);
+    position: relative;
+}
+
+.Menu ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.Menu ul li {
+    padding: 5px;
+    display: block;
+    text-align:center;
+}
+
+.ZonaP{
+    display: flow-root;
+    position: relative;
+    background-color: green;
+    min-height: calc(100vh - 160px);
+}
+
+.Continut{
+    margin: 0;
+}
+
+.Footer{
+    background-color: lightsalmon;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}

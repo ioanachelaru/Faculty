@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+
+.social ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.social ul li{
+    height: 83px;
+    width:  83px;
+    background: url(https://www.cs.ubbcluj.ro/~bufny/wp-content/uploads/css-pr4.png);
+    float: left;
+}
+.social ul li a{
+    height: 83px;
+    width: 83px;
+    display: block;
+}
+.social ul li.facebook{
+    background-position: 0 -85px;
+}
+
+.social ul li.facebook:hover{
+    background-position: 0 0;
+}
+
+.social ul li.flickr{
+    background-position: -85px -85px;
+}
+
+.social ul li.flickr:hover{
+    background-position: -85px 0;
+}
+
+.social ul li.dribbble{
+    background-position: -170px -85px;
+}
+
+.social ul li.dribbble:hover{
+    background-position: -170px 0;
+}
+
+.social ul li.twitter{
+    background-position: -673px -85px;
+}
+
+.social ul li.twitter:hover{
+    background-position: -673px 0px;
+}
+
+.social ul li.google-plus{
+    background-position: -252px -85px;
+}
+.social ul li.google-plus:hover{
+    background-position: -252px 0px;
+}
+
+.social ul li.pinterest{
+    background-position: -421px -85px;
+}
+
+.social ul li.pinterest:hover{
+    background-position: -421px 0px;
+}
+
+.social ul li.linkedin{
+    background-position: -336px -85px;
+}
+
+.social ul li.linkedin:hover{
+    background-position: -336px 0px;
+}
+
+.social ul li.rss{
+    background-position: -505px -85px;
+}
+
+.social ul li.rss:hover{
+    background-position: -505px 0;
+}
+
+.social ul li.skype{
+    background-position: -589px -85px;
+}
+
+.social ul li.skype:hover{
+    background-position: -589px 0;
+}
+
+.social ul li.vimeo{
+    background-position: -757px -85px;
+}
+
+.social ul li.vimeo:hover{
+    background-position: -757px 0;
+}
+
+.social ul li.youtube{
+    background-position: -840px -85px;
+}
+
+.social ul li.youtube:hover{
+    background-position: -840px 0;
+}

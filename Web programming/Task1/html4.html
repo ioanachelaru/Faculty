@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Înscriere</title>
+</head>
+
+<body bgcolor="#f8f8ff">
+<p align="center"><img src="bannerbicikli.png" alt="Copii in drumetie" title="Copii veseli"></p>
+<h2 align="center">Formular înscriere tabără de vară</h2>
+
+<form action="" method="get">
+    <table align="center" cellpadding="10">
+
+        <!--Pasaj initial-->
+        <tr>
+            <td><b>Acest formular este destinat părinților. Completați și prezentați acest formular liderului vostru
+                însoțitor până în data de 20 iunie.</b> </td>
+        </tr>
+
+        <!--Tabel date minor-->
+        <tr>
+            <td>
+                <table align="center" cellpadding="10" border="1px solid black">
+
+                    <!--Date minor-->
+                    <tr>
+                        <th rowspan="10" valign="middle">Date minor</th>
+                    </tr>
+
+                    <!--Numele si prenume-->
+                    <tr>
+                        <td align="center">Nume și prenume</td>
+                        <td><input type="text" name="Nume" maxlength="30" >
+                            <input type="text" name="Prenume" maxlength="30" >
+                            <i>(Maxim 30+30 de caractere a-z și A-Z)</i></td>
+                    </tr>
+
+                    <!--Sexul minorului-->
+                    <tr>
+                        <td align="center">Sex</td>
+                        <td>
+                            Feminin<label>
+                            <input type="radio" name="Sex" value="Feminin" checked>
+                        </label>
+                            Masculin<label>
+                            <input type="radio" name="Sex" value="Masculin">
+                        </label>
+                        </td>
+                    </tr>
+
+                    <!--Varsta Radio Buttons-->
+                    <tr>
+                        <td align="center">În ce grupă de vârstă se încadrează minorul?</td>
+                        <td>
+                            5-8 ani<label>
+                            <input type="radio" name="Varsta" value="5-8">
+                        </label>
+                            9-13 ani<label>
+                            <input type="radio" name="Varsta" value="9-13">
+                        </label>
+                            14-17 ani<label>
+                            <input type="radio" name="Varsta" value="14-18">
+                        </label>
+                        </td>
+                    </tr>
+
+                    <!--Alergie Radio Buttons-->
+                    <tr>
+                        <td align="center" rowspan="2">Are minorul vreo alergie?</td>
+                        <td>
+                            Da <label>
+                            <input type="radio" name="Alergie" value="Da">
+                        </label>
+                            Nu <label>
+                            <input type="radio" name="Alergie" value="Nu" checked>
+                        </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dacă da, specificați: <label>
+                            <input type="text" name="Alergie" maxlength="50" size="50">
+                        </label></td>
+                    </tr>
+
+                    <!--Tratament Radio Button-->
+                    <tr>
+                        <td align="center" rowspan="2">Urmează mirorul vreun tratament medical <br> de care ar trebui să luăm la cunoștință?</td>
+                        <td>
+                            Da <label>
+                            <input type="radio" name="Tratament" value="Da">
+                        </label>
+                            Nu <label>
+                            <input type="radio" name="Tratament" value="Nu" checked>
+                        </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Dacă da, specificați: <label>
+                            <textarea name="Specificatii" rows="4" cols="30"></textarea>
+                        </label></td>
+                    </tr>
+
+                    <!--Pasiunile minorului-->
+                    <tr>
+                        <td align="center">Oferiți-ne câteva informații <br> despre pasiunile minorului</td>
+                        <td>
+                            Desenul
+                            <label>
+                                <input type="checkbox" name="Desenul" value="Desen" >
+                            </label>
+                            Cântatul
+                            <label>
+                                <input type="checkbox" name="Cantatul" value="Cantat" >
+                            </label>
+                            <br>
+                            Dansul
+                            <label>
+                                <input type="checkbox" name="Dansul" value="Dans" >
+                            </label>
+                            Pictura
+                            <label>
+                                <input type="checkbox" name="Pictura" value="Pictura">
+                            </label>
+                            <br>
+                            Altele
+                            <label>
+                                <input type="checkbox" name="Altele" value="Altele">
+                            </label>
+                            <label>
+                                <input type="text" name="Altele" maxlength="30">
+                            </label>
+                        </td>
+                    </tr>
+
+                    <!--Select conditii dormit minor-->
+                    <tr>
+                        <td align="center">În ce condiții poate dormi minorul?</td>
+                        <td>
+                            <label>
+                                <select multiple>
+                                    <option value="Cort" selected>Cort</option>
+                                    <option value="Interiosr" selected>Interior</option>
+                                    <option value="Adapost">Adapost</option>
+                                    <option value="Sub cerul liber">Sub cerul liber</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!--Tabel date reprezentant legal-->
+        <tr>
+            <td>
+                <table align="center" cellpadding="10" border="1px solid black" width="100%">
+
+                    <!--Date reprezentant-->
+                    <tr>
+                        <th rowspan="10">Date reprezentant legal</th>
+                    </tr>
+
+                    <!--Numele si prenume-->
+                    <tr>
+                        <td align="center">Nume și prenume</td>
+                        <td><input type="text" name="Nume" maxlength="30" >
+                            <input type="text" name="Prenume" maxlength="30" >
+                            <i>(Maxim 30+30 de caractere a-z și A-Z)</i></td>
+                    </tr>
+
+                    <!--Numar de telefon-->
+                    <tr>
+                        <td align="center">Numar de telefon</td>
+                        <td><input type="text" name="Telefon" maxlength="10">
+                            <i>(Maxim 10 cifre)</i></td>
+                    </tr>
+
+                    <!--Adresa de email-->
+                    <tr>
+                        <td align="center">Adresa de e-mail</td>
+                        <td><input type="text" name="Email" ></td>
+                    </tr>
+
+                    <!--Text Area Adresa parinte-->
+                    <tr>
+                        <td align="center">Adresa</td>
+                        <td><label>
+                            <textarea name="Adresa" rows="4" cols="30"></textarea>
+                        </label></td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <p align="justify"><strong>În acest an, peste 100 de cercetaşi din centrul local AMD Pildești, cu vârste cuprinse între 5 şi 30 de ani, vor lua parte la Campul centrului
+        local, care va avea loc în comuna Cristian, Brașov. Pentru că la cercetaşi toate activităţile vin cu o poveste, cadrul simbolic (tema taberei)
+        din acest an este inspirat de Jocurile Olimpice. Toate activităţile au primit denumiri sugestive şi totul se va desfăşura sub forma unei competiţii.
+        <br><br>Programul se va întinde pe parcursul celor 7 zile petrecute în natură. Acesta va include două zile de construcţii, timp în care va fi ridicat campul,
+        se vor construi adăposturi de soare sau în caz de ploaie, duşuri sau locuri pentru spălat vase, dar şi un catarg unde se va ridica în fiecare dimineaţă
+        steagul (ONCR). Şi aceste activităţi au primit denumiri speciale, precum 500m noduri, săpături viteză sau construcţia artistică, activităţile fiind
+        transformate în probe, prin care cercetaşii, organizaţi în patrule (echipe) pot câştiga puncte.</strong></p>
+
+    <p align="justify"><strong>Programul va mai cuprinde şi 1, 2 sau 3 zile de hike, care în acest an a primit denumirea de triatlon, şi are 3 probe principale:</strong></p>
+    <ol type="I">
+        <li>Hiking - urcatul pe munte</li>
+        <li>Caving - explorarea peșterilor</li>
+        <li>Surviving - supraviețuire</li>
+    </ol>
+    <p><strong>Fiecare din aceste probe vor fi organizate în funcţie de specificul şi nevoile prezente în fiecare ramură de vârstă, mai exact:</strong></p>
+    <ul>
+        <li>Lupișori (6-11 ani)</li>
+        <li>Temerari (11-14 ani)</li>
+        <li>Exploratori (15-18 ani)</li>
+    </ul>
+
+    <p align="justify"><strong>
+        Totodată, va mai fi o zi de olimpiadă, în cadrul căreia va avea loc competiţia propiu-zisă, unde cercetaşii se vor întrece în probe
+        precum ski pe iarbă, aruncarea bocancului, trasee cu obstacole sau căţărarea viteză. <br> Pentru cei mici, s-au pregătit şi câteva ateliere,
+        unde îşi vor descoperi talentele muzicale, de pictură sau vor învăţa despre acordarea primului ajutor în caz de nevoie. O zi va fi
+        adresată unui joc comun, de mare <br> întindere, la care vor participa toţi cei prezenţi în camp, iar ziua de sâmbătă va fi ziua porţilor
+        deschise, în care cercetaşii aşteaptă vizita părinţilor şi a prietenilor, aceasta fiind urmată de seara farfuriilor <br> deschise, în cadrul
+        căreia patrulele de cercetaşi îşi vor etala abilităţile într-ale gătitului. <br>
+        Ultima seară de camp este, tradiţional, concretizată prin fiesta, în cadrul căreia vor participa toţi cercetaşii prezenţi în camp şi vor cânta
+        cântece de munte în faţa unui foc mare de tabără.
+    </strong></p>
+
+    <p><strong>Cei mici trebuie să aducă cu ei următoarele:</strong></p>
+    <ol start="1">
+        <li>Pelerină de ploaie</li>
+        <li>Gamela:
+            <ol type="a">
+                <li>Lingură</li>
+                <li>Furculiță</li>
+                <li>Cuțit</li>
+                <li>Bol</li>
+                <li>Cană</li>
+            </ol>
+        </li>
+        <li>Briceag</li>
+        <li>Bocanci de munte</li>
+        <li>Haine potrivite vremii</li>
+        <li>Șapcă/pălărie</li>
+        <li>Cremă de protecție solară</li>
+        <li>Protecie împotriva țânțarilor</li>
+    </ol>
+
+    <p><strong>
+        Pentru mai multe informații despre noi și activitățile noastre ne găsiți
+        <a href="https://www.facebook.com/pg/cercetasii.amdpildesti/posts/" target="_blank">aici</a>.
+        <br>
+        De asemenea ne puteți scrie la adresa <input type="text" name="adresa" value="amd_cerce@gmail.com" readonly><br>
+        Sau la numărul de telefon <input type="text" name="telefon" value="0784608406" disabled><br>
+    </strong></p>
+
+    <div align="center">
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="refresh" value="Refresh">
+    </div>
+</form>
+</body>
+</html>

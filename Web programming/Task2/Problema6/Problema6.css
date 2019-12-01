@@ -1,0 +1,32 @@
+.Text{
+    background-image: url("http://3.bp.blogspot.com/-4oAWWCcNNz4/Tjr3nKNyVUI/AAAAAAAAPLU/Pouua-pNsEY/s1600/sq.gif");
+    width: 396px;
+    height: 18px;
+    background-size: 20px;
+    border: none;
+    font-family: monospace;
+    font-size: 13px;
+    padding-left: 5px;
+    letter-spacing: 12.7px;
+}
+
+.Numar{
+    background-image: url("http://3.bp.blogspot.com/-4oAWWCcNNz4/Tjr3nKNyVUI/AAAAAAAAPLU/Pouua-pNsEY/s1600/sq.gif");
+    width: 256px;
+    height: 18px;
+    background-size: 20px;
+    border: none;
+    font-family: monospace;
+    font-size: 13px;
+    padding-left: 5px;
+    letter-spacing: 12.7px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    margin-right: 20px;
+    text-align: right;
+}
