@@ -1,0 +1,13 @@
+D:\MPP\Client-ServerCSharp\CommonTools\obj\Debug\CommonTools.Properties.Resources.resources
+D:\MPP\Client-ServerCSharp\CommonTools\obj\Debug\SharedDLL.csproj.GenerateResource.cache
+D:\MPP\Client-ServerCSharp\CommonTools\obj\Debug\SharedDLL.csproj.CoreCompileInputs.cache
+D:\MPP\Client-ServerCSharp\CommonTools\obj\Debug\SharedDLL.csprojAssemblyReference.cache
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.csproj.GenerateResource.cache
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.csproj.CoreCompileInputs.cache
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.csprojAssemblyReference.cache
+D:\MPP\Client-ServerCSharp\SharedDLL\bin\Debug\SharedDLL.dll.config
+D:\MPP\Client-ServerCSharp\SharedDLL\bin\Debug\SharedDLL.dll
+D:\MPP\Client-ServerCSharp\SharedDLL\bin\Debug\SharedDLL.pdb
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.Properties.Resources.resources
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.dll
+D:\MPP\Client-ServerCSharp\SharedDLL\obj\Debug\SharedDLL.pdb
