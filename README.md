@@ -1,2 +1,2 @@
 # Babes Bolyai University
-💻 Computer Science (english)
+💻 Computer Science
