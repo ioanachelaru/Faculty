@@ -1,0 +1,17 @@
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.csprojAssemblyReference.cache
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C_MPP.Properties.Resources.resources
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.csproj.GenerateResource.cache
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.csproj.CoreCompileInputs.cache
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\Lab1C-MPP.exe.config
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\Lab1C-MPP.exe
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\Lab1C-MPP.pdb
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\Google.Protobuf.dll
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\MySql.Data.dll
+D:\MPP\Lab1C-MPP\Lab1C-MPP\bin\Debug\MySql.Data.xml
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.csproj.CopyComplete
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.exe
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C-MPP.pdb
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C_MPP.Form1.resources
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C_MPP.Form2.resources
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C_MPP.Form3.resources
+D:\MPP\Lab1C-MPP\Lab1C-MPP\obj\Debug\Lab1C_MPP.Form4.resources

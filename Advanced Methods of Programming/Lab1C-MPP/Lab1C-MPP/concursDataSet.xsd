@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="concursDataSet" targetNamespace="http://tempuri.org/concursDataSet.xsd" xmlns:mstns="http://tempuri.org/concursDataSet.xsd" xmlns="http://tempuri.org/concursDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="concursConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="concursConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab1C_MPP.Properties.Settings.GlobalReference.Default.concursConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="angajatTableAdapter" GeneratorDataComponentClassName="angajatTableAdapter" Name="angajat" UserDataComponentName="angajatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.angajat" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `userAngajat`, `passwordAngajat` FROM `angajat`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="distantaTableAdapter" GeneratorDataComponentClassName="distantaTableAdapter" Name="distanta" UserDataComponentName="distantaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.distanta" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `valoare` FROM `distanta`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="inscriereTableAdapter" GeneratorDataComponentClassName="inscriereTableAdapter" Name="inscriere" UserDataComponentName="inscriereTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.inscriere" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idParticipant`, `idProba`, `idInscriere` FROM `inscriere`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="participantTableAdapter" GeneratorDataComponentClassName="participantTableAdapter" Name="participant" UserDataComponentName="participantTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.participant" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idParticipant`, `numeParticipant`, `varstaParticipant` FROM `participant`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="probaTableAdapter" GeneratorDataComponentClassName="probaTableAdapter" Name="proba" UserDataComponentName="probaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.proba" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idProba`, `stil`, `distanta` FROM `proba`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stilTableAdapter" GeneratorDataComponentClassName="stilTableAdapter" Name="stil" UserDataComponentName="stilTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="concursConnectionString (Settings)" DbObjectName="concurs.stil" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `denumire` FROM `stil`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="concursDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="concursDataSet" msprop:Generator_UserDSName="concursDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="angajat" msprop:Generator_TableClassName="angajatDataTable" msprop:Generator_TableVarName="tableangajat" msprop:Generator_TablePropName="angajat" msprop:Generator_RowDeletingName="angajatRowDeleting" msprop:Generator_RowChangingName="angajatRowChanging" msprop:Generator_RowEvHandlerName="angajatRowChangeEventHandler" msprop:Generator_RowDeletedName="angajatRowDeleted" msprop:Generator_UserTableName="angajat" msprop:Generator_RowChangedName="angajatRowChanged" msprop:Generator_RowEvArgName="angajatRowChangeEvent" msprop:Generator_RowClassName="angajatRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="distanta" msprop:Generator_TableClassName="distantaDataTable" msprop:Generator_TableVarName="tabledistanta" msprop:Generator_TablePropName="distanta" msprop:Generator_RowDeletingName="distantaRowDeleting" msprop:Generator_RowChangingName="distantaRowChanging" msprop:Generator_RowEvHandlerName="distantaRowChangeEventHandler" msprop:Generator_RowDeletedName="distantaRowDeleted" msprop:Generator_UserTableName="distanta" msprop:Generator_RowChangedName="distantaRowChanged" msprop:Generator_RowEvArgName="distantaRowChangeEvent" msprop:Generator_RowClassName="distantaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="inscriere" msprop:Generator_TableClassName="inscriereDataTable" msprop:Generator_TableVarName="tableinscriere" msprop:Generator_TablePropName="inscriere" msprop:Generator_RowDeletingName="inscriereRowDeleting" msprop:Generator_RowChangingName="inscriereRowChanging" msprop:Generator_RowEvHandlerName="inscriereRowChangeEventHandler" msprop:Generator_RowDeletedName="inscriereRowDeleted" msprop:Generator_UserTableName="inscriere" msprop:Generator_RowChangedName="inscriereRowChanged" msprop:Generator_RowEvArgName="inscriereRowChangeEvent" msprop:Generator_RowClassName="inscriereRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="participant" msprop:Generator_TableClassName="participantDataTable" msprop:Generator_TableVarName="tableparticipant" msprop:Generator_TablePropName="participant" msprop:Generator_RowDeletingName="participantRowDeleting" msprop:Generator_RowChangingName="participantRowChanging" msprop:Generator_RowEvHandlerName="participantRowChangeEventHandler" msprop:Generator_RowDeletedName="participantRowDeleted" msprop:Generator_UserTableName="participant" msprop:Generator_RowChangedName="participantRowChanged" msprop:Generator_RowEvArgName="participantRowChangeEvent" msprop:Generator_RowClassName="participantRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="proba" msprop:Generator_TableClassName="probaDataTable" msprop:Generator_TableVarName="tableproba" msprop:Generator_TablePropName="proba" msprop:Generator_RowDeletingName="probaRowDeleting" msprop:Generator_RowChangingName="probaRowChanging" msprop:Generator_RowEvHandlerName="probaRowChangeEventHandler" msprop:Generator_RowDeletedName="probaRowDeleted" msprop:Generator_UserTableName="proba" msprop:Generator_RowChangedName="probaRowChanged" msprop:Generator_RowEvArgName="probaRowChangeEvent" msprop:Generator_RowClassName="probaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stil" msprop:Generator_TableClassName="stilDataTable" msprop:Generator_TableVarName="tablestil" msprop:Generator_TablePropName="stil" msprop:Generator_RowDeletingName="stilRowDeleting" msprop:Generator_RowChangingName="stilRowChanging" msprop:Generator_RowEvHandlerName="stilRowChangeEventHandler" msprop:Generator_RowDeletedName="stilRowDeleted" msprop:Generator_UserTableName="stil" msprop:Generator_RowChangedName="stilRowChanged" msprop:Generator_RowEvArgName="stilRowChangeEvent" msprop:Generator_RowClassName="stilRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
