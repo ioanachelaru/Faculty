@@ -70,7 +70,9 @@ public class Task_v2 {
 
                     if (pair.coeficient == end_of_input) {
                         done.set(true);
-                        notify();
+                        synchronized (this) {
+                            notify();
+                        }
                         break;
                     }
 
