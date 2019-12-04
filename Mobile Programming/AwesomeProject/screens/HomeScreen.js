@@ -1,25 +1,28 @@
 import React from 'react';
-import { Text, View, ActivityIndicator, FlatList } from 'react-native';
-import styles from '../auxiliars/Styles'
+import {ActivityIndicator,View ,Text, FlatList} from "react-native";
+import "../auxiliars/Styles.js";
+import MyPieChart from "../charts/piechart";
 
-export default class HomeScreen extends React.Component {
+export default class Home extends React.Component {
+
 
     constructor(props) {
         super(props);
         this.state = {
             isLoading: true,
-            data: []
+            data1: [],
+            filterData: [],
+            ratingsForSeason1: []
         }
     };
 
-    componentDidMount() {
-        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=363ab14c')
+    getRatingsBySeason(season) {
+        fetch('http://www.omdbapi.com/?apikey=363ab14c&t=Game of Thrones&Season='+season)
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState(
                     {
-                        isLoading: false,
-                        data: responseJson
+                        filterData: responseJson['Episodes'],
                     }
                 );
             })
@@ -28,32 +31,52 @@ export default class HomeScreen extends React.Component {
             });
     }
 
+    componentDidMount() {
+        // fetch('http://www.omdbapi.com/?i=tt3896198&apikey=363ab14c')
+        // fetch('http://www.omdbapi.com/?apikey=363ab14c&s=batman')
+        fetch('http://www.omdbapi.com/?apikey=363ab14c&t=Game of Thrones&Season=1')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState(
+                    {
+                        isLoading: false,
+                        data1: responseJson['Episodes'],
+                    }
+                );
+            })
+            .catch((error) => {
+                console.error(error);
+            });
 
-    Item({ title }) {
-        return (
-            <View style={styles.item}>
-                <Text>{title}</Text>
-            </View>
+        this.getRatingsBySeason(2);
+        this.setState(
+            {
+                ratingsForSeason1: this.state.filterData,
+            }
         );
     }
-
     render() {
         if (this.state.isLoading) {
-            return(
-                <View style={styles.container}>
-                    <ActivityIndicator size="large" />
+            return (
+                <View style={styles.homeView}>
+                    <ActivityIndicator size="large"/>
                 </View>
-            )}
+            )
+        }
 
         return (
             <View style={styles.homeView}>
-                <FlatList
-                          data={this.state.data}
-                          renderItem={({ item }) => <Item title={item['Title']} />}
-
-                          //keyExtractor={item => item.id}
+                <FlatList style={styles.list}
+                          data={this.state.filterData}
+                          renderItem={({item}) => <Text style={styles.text}>{item.Title}</Text>}
+                          keyExtractor={item => item.id}
                 />
+                <View style={styles.container}>
+                    <MyPieChart/>
+                </View>
+
             </View>
-        );
+        )
+
     }
 }

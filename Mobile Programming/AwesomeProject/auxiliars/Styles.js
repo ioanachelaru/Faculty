@@ -10,6 +10,15 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
 
+    list: {
+        flex: 1,
+    },
+    text: {
+        padding: 10,
+        fontSize: 18,
+        height: 44,
+    },
+
     image: {
         resizeMode: 'contain',
         width: 170,
