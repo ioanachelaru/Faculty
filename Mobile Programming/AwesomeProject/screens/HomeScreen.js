@@ -1,5 +1,5 @@
 import React from 'react';
-import {ActivityIndicator,View ,Text, FlatList} from "react-native";
+import {ActivityIndicator, ScrollView, FlatList, Text, View} from "react-native";
 import "../auxiliars/Styles.js";
 import MyPieChart from "../charts/piechart";
 
@@ -10,19 +10,18 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             isLoading: true,
-            data1: [],
-            filterData: [],
-            ratingsForSeason1: []
+            dataForList: [],
         }
     };
 
-    getRatingsBySeason(season) {
+    getSeason(season) {
         fetch('http://www.omdbapi.com/?apikey=363ab14c&t=Game of Thrones&Season='+season)
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState(
                     {
-                        filterData: responseJson['Episodes'],
+                        isLoading: false,
+                        dataForList: this.state.dataForList.concat(responseJson['Episodes']),
                     }
                 );
             })
@@ -32,29 +31,16 @@ export default class Home extends React.Component {
     }
 
     componentDidMount() {
-        // fetch('http://www.omdbapi.com/?i=tt3896198&apikey=363ab14c')
-        // fetch('http://www.omdbapi.com/?apikey=363ab14c&s=batman')
-        fetch('http://www.omdbapi.com/?apikey=363ab14c&t=Game of Thrones&Season=1')
-            .then((response) => response.json())
-            .then((responseJson) => {
-                this.setState(
-                    {
-                        isLoading: false,
-                        data1: responseJson['Episodes'],
-                    }
-                );
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-
-        this.getRatingsBySeason(2);
-        this.setState(
-            {
-                ratingsForSeason1: this.state.filterData,
-            }
-        );
+        this.getSeason(1);
+        this.getSeason(2);
+        this.getSeason(3);
+        this.getSeason(4);
+        this.getSeason(5);
+        this.getSeason(6);
+        this.getSeason(7);
+        this.getSeason(8);
     }
+
     render() {
         if (this.state.isLoading) {
             return (
@@ -63,19 +49,20 @@ export default class Home extends React.Component {
                 </View>
             )
         }
-
         return (
-            <View style={styles.homeView}>
-                <FlatList style={styles.list}
-                          data={this.state.filterData}
-                          renderItem={({item}) => <Text style={styles.text}>{item.Title}</Text>}
-                          keyExtractor={item => item.id}
-                />
-                <View style={styles.container}>
-                    <MyPieChart/>
-                </View>
+            <ScrollView style={{flex: 1}}>
+                <View style={styles.homeView}>
+                    <FlatList style={styles.list}
+                              data={this.state.dataForList}
+                              renderItem={({item}) => <Text style={styles.text}>{item.Title}</Text>}
+                              keyExtractor={item => item.id}
+                    />
+                    <View style={styles.container}>
+                        <MyPieChart />
+                    </View>
 
-            </View>
+                </View>
+            </ScrollView>
         )
 
     }
