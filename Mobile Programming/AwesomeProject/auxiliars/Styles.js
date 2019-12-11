@@ -62,7 +62,7 @@ export default StyleSheet.create({
     },
 
     homeView: {
-        backgroundColor: '#9A4885',
+        backgroundColor: 'white',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'

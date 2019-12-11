@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Animated, Easing , StatusBar, } from 'react-native';
+import { Animated, Easing , StatusBar, } from 'react-native';
 import PieChart from 'react-native-pie-chart';
-
-const styles = StyleSheet.create({
-    title: {
-        fontSize: 24,
-        margin: 10
-    }
-});
 
 export default class MyPieChart extends Component {
     constructor(props) {
@@ -72,7 +65,6 @@ export default class MyPieChart extends Component {
         const sliceColor = ['#F44336','#2196F3','#FFEB3B', '#4CAF50', '#FF9800',"#7746c2","#3294a8","#32a852"];
 
         return (
-            //<ScrollView style={{flex: 1}}>
             <Animated.View style={{
                 flex: 1,
                 alignItems: 'center',
@@ -87,7 +79,6 @@ export default class MyPieChart extends Component {
                     sliceColor={sliceColor}
                 />
             </Animated.View>
-            //</ScrollView>
         );
     }
 }

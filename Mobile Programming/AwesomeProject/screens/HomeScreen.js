@@ -1,5 +1,6 @@
-import React from 'react';
-import {ActivityIndicator, ScrollView, FlatList, Text, View} from "react-native";
+import DropdownMenu from 'react-native-dropdown-menu';
+import {View, ScrollView, Text, FlatList, ActivityIndicator} from "react-native";
+import React from "react";
 import "../auxiliars/Styles.js";
 import MyPieChart from "../charts/piechart";
 
@@ -10,8 +11,9 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             isLoading: true,
-            dataForList: [],
-        }
+            text: '',
+            dataForList: []
+        };
     };
 
     getSeason(season) {
@@ -21,7 +23,7 @@ export default class Home extends React.Component {
                 this.setState(
                     {
                         isLoading: false,
-                        dataForList: this.state.dataForList.concat(responseJson['Episodes']),
+                        dataForList: responseJson['Episodes']
                     }
                 );
             })
@@ -31,17 +33,11 @@ export default class Home extends React.Component {
     }
 
     componentDidMount() {
-        this.getSeason(1);
-        this.getSeason(2);
-        this.getSeason(3);
-        this.getSeason(4);
-        this.getSeason(5);
-        this.getSeason(6);
-        this.getSeason(7);
-        this.getSeason(8);
+        this.getSeason("1")
     }
 
     render() {
+
         if (this.state.isLoading) {
             return (
                 <View style={styles.homeView}>
@@ -49,21 +45,34 @@ export default class Home extends React.Component {
                 </View>
             )
         }
+
+        var data = [["Season 1", "Season 2", "Season 3", "Season 4","Season 5","Season 6","Season 7","Season 8"]];
         return (
             <ScrollView style={{flex: 1}}>
-                <View style={styles.homeView}>
-                    <FlatList style={styles.list}
-                              data={this.state.dataForList}
-                              renderItem={({item}) => <Text style={styles.text}>{item.Title}</Text>}
-                              keyExtractor={item => item.id}
-                    />
-                    <View style={styles.container}>
-                        <MyPieChart />
+                <DropdownMenu
+                    style={{flex: 1}}
+                    bgColor={'white'}
+                    tintColor={'#666666'}
+                    activityTintColor={'#3C1070'}
+                    optionTextStyle={{color: '#333333'}}
+                    titleStyle={{color: '#333333'}}
+                    handler={(selection, row) => this.getSeason(data[selection][row].split(" ")[1])}
+                    data={data}
+                >
+
+                    <View style={{flex: 1}}>
+                        <FlatList style={styles.list}
+                                  data={this.state.dataForList}
+                                  renderItem={({item}) => <Text style={styles.text}>{item.Title}</Text>}
+                                  keyExtractor={item => item.id}
+                        />
                     </View>
-
-                </View>
+                    <View style={styles.container}>
+                        <MyPieChart lista={this.state.dataForList} />
+                    </View>
+                </DropdownMenu>
             </ScrollView>
-        )
-
+        );
     }
+
 }
