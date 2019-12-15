@@ -7,7 +7,7 @@ Sala concerte
 O sala de concerte vinde bilete la spectacolele organizate printr-o aplicatie client-server. Sala are trei
 categorii de locuri cu preturi diferite. Pentru fiecare categorie exista o lista de locuri care pot fi vandute.
 Pentru fiecare spectacol avem informatii de tip (ID_spectacol, data, titlu, descriere).
-Se pot opera mai multe vanzari simultane ! <br>
+Se pot opera mai multe vanzari simultane ! <br><br>
 Permanent se mentine o evidenta actualizata pentru:
 - informatii despre bilete pentru fiecare spectacol - (data, ID_spectacol, lista_locuri_ vandute);
 - vanzarile efectuate: lista de vanzari; vanzare = (data_vanzare, ID_spectacol, numar_bilete,
