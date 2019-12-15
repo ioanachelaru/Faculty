@@ -15,7 +15,7 @@ lista_locurilor) ;
 - soldul total (suma totala incasata).
 Periodic sistemul face o verificare a locurilor vandute prin verificarea corespondentei corecte intre
 locurile libere si vanzarile facute (de la ultima verificare pana in prezent), sumele incasate in aceeasi
-perioada si soldul total.
+perioada si soldul total. <br><br>
 Sistemul foloseste un mecanism de tip ‘Thread-Pool’ pentru rezolvarea concurenta a vanzarilor.
 Pentru a testare se va folosi un thread care initiaza/creeaza la interval de 5 sec o noua cerere de vanzare
 bilete folosind date generate aleatoriu.
