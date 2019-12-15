@@ -1,5 +1,5 @@
-####Laborator 4 <br>
-###Tema:
+#### Laborator 4 <br>
+### Tema:
 - Folosirea executiei concurente prin apeluri asincrone.
 - Folosirea mecanismelor: future, promises si thread_pool.
 - Analiza imbunatatirii performantei executiei unei aplicatii (de tip business) prin
