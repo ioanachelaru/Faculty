@@ -1,0 +1,5 @@
+rootProject.name = 'EventsManagementSystem'
+include 'Client'
+include 'Server'
+include 'SharedData'
+
