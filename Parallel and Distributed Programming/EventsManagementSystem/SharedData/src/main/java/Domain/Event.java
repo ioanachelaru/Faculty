@@ -8,6 +8,7 @@ public class Event {
     private String title;
     private String description;
 
+
     public Event(Integer id, Date date, String title, String description){
         this.id = id;
         this.date = date;
