@@ -1,5 +1,9 @@
-package Domain;
+package Repository;
 
+import Domain.Event;
+import Domain.Sale;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class MockRepository {
@@ -7,10 +11,10 @@ public class MockRepository {
     private List<Sale> sales;
     private Double balance;
 
-    public MockRepository(List<Event> events, List<Sale> sales, Double balance) {
-        this.events = events;
-        this.sales = sales;
-        this.balance = balance;
+    public MockRepository() {
+        this.events = new ArrayList<>();
+        this.sales = new ArrayList<>();
+        this.balance = 0.0;
     }
 
     public List<Event> getEvents() { return events; }

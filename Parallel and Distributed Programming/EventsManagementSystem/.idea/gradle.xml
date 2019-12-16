@@ -10,7 +10,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Client" />
             <option value="$PROJECT_DIR$/Server" />
-            <option value="$PROJECT_DIR$/SharedData" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
