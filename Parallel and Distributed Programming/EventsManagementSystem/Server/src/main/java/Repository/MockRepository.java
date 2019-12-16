@@ -28,4 +28,8 @@ public class MockRepository {
     public Double getBalance() { return balance; }
 
     public void setBalance(Double balance) { this.balance = balance; }
+
+    public void addSale(String date, List<String> seats) {
+        // TO DO
+    }
 }
