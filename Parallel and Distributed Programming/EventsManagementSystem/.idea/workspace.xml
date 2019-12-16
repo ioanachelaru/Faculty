@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff02d9f8-105f-4849-a56e-0a0db129ec8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff02d9f8-105f-4849-a56e-0a0db129ec8e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -56,7 +51,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="640">
               <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -286,7 +281,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576510289561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576528950689" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Lab4-20180115T181516Z-001/Lab4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -338,12 +333,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576419525929</updated>
-      <workItem from="1576419527787" duration="12759000" />
+      <workItem from="1576419527787" duration="12811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12759000" />
+    <option name="totallyTimeSpent" value="12811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -515,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="640">
           <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
