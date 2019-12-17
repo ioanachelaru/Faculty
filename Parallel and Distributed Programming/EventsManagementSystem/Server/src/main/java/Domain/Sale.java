@@ -1,8 +1,9 @@
 package Domain;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Sale {
+public class Sale implements Serializable {
     private int id_sale;
     private int id_event;
     private String date_of_sale;

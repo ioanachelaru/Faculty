@@ -1,17 +1,17 @@
 package Domain;
 
-import java.util.Date;
+import java.io.Serializable;
 import java.util.List;
 
-public class Event {
+public class Event implements Serializable {
     private int id;
-    private Date date;
+    private String date;
     private String title;
     private String description;
     private List<Seat> seats;
 
 
-    public Event(Integer id, Date date, String title, String description, List<Seat> seats){
+    public Event(Integer id, String date, String title, String description, List<Seat> seats){
         this.id = id;
         this.date = date;
         this.title = title;
@@ -23,9 +23,9 @@ public class Event {
 
     public void setId(int id) { this.id = id; }
 
-    public Date getDate() { return date; }
+    public String getDate() { return date; }
 
-    public void setDate(Date date) { this.date = date; }
+    public void setDate(String date) { this.date = date; }
 
     public String getTitle() { return title; }
 

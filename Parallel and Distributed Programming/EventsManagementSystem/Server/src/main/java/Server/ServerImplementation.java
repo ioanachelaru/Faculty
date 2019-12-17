@@ -3,7 +3,6 @@ package Server;
 import Domain.Event;
 import Domain.Seat;
 import Repository.MockRepository;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,12 +14,12 @@ public class ServerImplementation implements IServer {
     }
 
     @Override
-    public void addSale(String date, List<String> seats) {
-        this.mockRepository.addSale(date, seats);
+    public void addSale(int id_event, String date, List<Seat> seats) {
+        this.mockRepository.addSale(id_event, date, seats);
     }
 
     @Override
-    public List<Event> printAllEventsAvailable() {
+    public List<Event> getAllEventsAvailable() {
         List<Event> list = new ArrayList<>();
         for (Event event : this.mockRepository.getEvents()) {
             for (Seat seat : event.getSeats()) {
@@ -31,5 +30,10 @@ public class ServerImplementation implements IServer {
             }
         }
         return list;
+    }
+
+    @Override
+    public void markSeat(int id_event, Seat seat) {
+        this.mockRepository.setSeat(id_event, seat);
     }
 }

@@ -1,10 +1,12 @@
 package Server;
 
 import Domain.Event;
-import Domain.Sale;
+import Domain.Seat;
+
 import java.util.List;
 
 public interface IServer {
-    void addSale(String date, List<String> seats);
-    List<Event> printAllEventsAvailable();
+    void addSale(int id_event, String date, List<Seat> seats);
+    List<Event> getAllEventsAvailable();
+    void markSeat(int id_event, Seat seat);
 }

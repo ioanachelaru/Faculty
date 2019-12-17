@@ -1,12 +1,16 @@
 package Domain;
 
-public class Seat {
+import java.io.Serializable;
+
+public class Seat implements Serializable {
     private String type;
+    private String name;
     private Double price;
     private Boolean availability;
 
-    public Seat(String type, Double price, Boolean availability) {
+    public Seat(String type, String name, Double price, Boolean availability) {
         this.type = type;
+        this.name = name;
         this.price = price;
         this.availability = availability;
     }
@@ -22,4 +26,8 @@ public class Seat {
     public Boolean getAvailability() { return availability; }
 
     public void setAvailability(Boolean availability) { this.availability = availability; }
+
+    public String getName() { return name; }
+
+    public void setName(String name) { this.name = name; }
 }
