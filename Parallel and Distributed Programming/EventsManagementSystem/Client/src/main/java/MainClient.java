@@ -1,7 +1,6 @@
 import Server.IServer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.rmi.RemoteException;
 
 public class MainClient {

@@ -11,15 +11,21 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class MockRepository {
     private List<Event> events;
     private List<Sale> sales;
+
     private Double currentSold;
     private Double lastCheckSold;
+    private Double balance;
+
     private ReentrantReadWriteLock lock;
 
     public MockRepository() {
         this.events = new ArrayList<>();
         this.sales = new ArrayList<>();
+
         this.currentSold = 0.0;
         this.lastCheckSold = 0.0;
+        this.balance = 0.0;
+
         this.lock = new ReentrantReadWriteLock();
 
         this.populateEvents();
@@ -56,9 +62,9 @@ public class MockRepository {
 
     public void setSales(List<Sale> sales) { this.sales = sales; }
 
-    public Double getBalance() { return currentSold; }
+    public Double getCurrentSold() { return currentSold; }
 
-    public void setBalance(Double balance) { this.currentSold = balance; }
+    public void setCurrentSold(Double balance) { this.currentSold = balance; }
 
     private int generateIdSale(){ return this.getSales().size() + 1; }
 
@@ -66,7 +72,12 @@ public class MockRepository {
 
     public void setLastCheckSold(Double lastCheckSold) { this.lastCheckSold = lastCheckSold; }
 
+    public Double getBalance(){ return this.balance; }
+
+    public void setBalance( Double balance ){ this.balance = balance; }
+
     public void addSale(int id_event, String date, List<Seat> seats) {
+        this.lock.readLock().lock();
         int id_sale = this.generateIdSale();
 
         this.sales.add(new Sale(id_sale, id_event, date, seats));
@@ -74,9 +85,11 @@ public class MockRepository {
         for (Seat s:seats) {
             this.currentSold += s.getPrice();
         }
+        this.lock.readLock().unlock();
     }
 
     public void setSeat(int id_event, Seat seat) {
+        this.lock.readLock().lock();
         for (Event event: this.events) {
             if(event.getId() == id_event){
                 for (Seat s: event.getSeats()) {
@@ -88,5 +101,6 @@ public class MockRepository {
                 break;
             }
         }
+        this.lock.readLock().unlock();
     }
 }

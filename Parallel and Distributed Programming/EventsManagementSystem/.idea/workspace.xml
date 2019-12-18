@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff02d9f8-105f-4849-a56e-0a0db129ec8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/MainClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Domain/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Sale.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Domain/Sale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Domain/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Repository/MockRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Repository/MockRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Server/IServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Server/IServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Server/ServerImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/Server/ServerImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Domain/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Domain/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/MainClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,10 +33,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="660">
+              <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
               <folding>
                 <element signature="method#populateEvents#0;class#MockRepository#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,11 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/MainClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="40">
+              <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -136,13 +135,13 @@
         <option value="$PROJECT_DIR$/Client/src/main/resources/spring-client.xml" />
         <option value="$PROJECT_DIR$/Server/src/main/resources/spring-server.xml" />
         <option value="$PROJECT_DIR$/Server/src/main/java/MainServer.java" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/MainClient.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Domain/Event.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Domain/Seat.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/Client.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/MainClient.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" />
       </list>
     </option>
@@ -275,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576593284394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576665543602" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Lab4-20180115T181516Z-001/Lab4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -335,12 +334,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576419525929</updated>
-      <workItem from="1576419527787" duration="19852000" />
+      <workItem from="1576419527787" duration="22356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19852000" />
+    <option name="totallyTimeSpent" value="22356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -473,20 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/IServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -521,11 +506,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/main/java/MainClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -536,10 +518,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="660">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
           <folding>
             <element signature="method#populateEvents#0;class#MockRepository#0" />
           </folding>
