@@ -58,7 +58,9 @@ public class MockRepository {
 
     public void setEvents(List<Event> events) { this.events = events; }
 
-    public List<Sale> getSales() { return sales; }
+    public List<Sale> getSales() {
+        return sales;
+    }
 
     public void setSales(List<Sale> sales) { this.sales = sales; }
 
