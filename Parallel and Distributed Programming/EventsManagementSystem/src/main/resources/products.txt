@@ -1,0 +1,5 @@
+1,21.12.2020,Fuego in concert,minunta
+2,21.08.2020,Hrusca in concert,fabulos
+3,21.09.2020,Stefan Banica Jr. in concert,uau
+4,21.10.2020,Ducu Berti in concert,spectaculos
+5,21.11.2020,Emeric Imre in concert,mirobolant
