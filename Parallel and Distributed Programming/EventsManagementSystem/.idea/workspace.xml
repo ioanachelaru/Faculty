@@ -2,45 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff02d9f8-105f-4849-a56e-0a0db129ec8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Requests/BuyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Requests/GetAllEventsAvailableRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Requests/GetAllSeatsForEventRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Responses/BuyResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Responses/GetAllEventsAvailableResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/Responses/GetAllSeatsAvailableResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/Controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/Services/CheckerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/Services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/StartServer/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/products.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/out/production/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/Client/out/production/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/out/production/classes/MainClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/out/production/resources/spring-client.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/MainClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/spring-client.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Sale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Domain/Seat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/MainServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Repository/MockRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Server/IServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/Server/ServerImplementation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/Domain/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/Domain/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/Domain/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/MainServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Repository/MockRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/IServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server/ServerImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -88,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="788">
@@ -96,6 +59,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,6 +126,7 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log.txt" />
         <option value="$PROJECT_DIR$/Server/src/main/java/Services/ProductService.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -177,147 +150,6 @@
               <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Domain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StartServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventsManagementSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -328,7 +160,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578063520942" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578219245612" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Lab4/Lab4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -422,26 +254,27 @@
       <updated>1576419525929</updated>
       <workItem from="1576419527787" duration="22356000" />
       <workItem from="1576834811179" duration="781000" />
-      <workItem from="1578044189980" duration="4570000" />
+      <workItem from="1578044189980" duration="5164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30290000" />
+    <option name="totallyTimeSpent" value="30884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22348994" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22348994" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
@@ -772,6 +605,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
