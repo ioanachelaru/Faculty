@@ -1,125 +1,139 @@
 import Domain.Event;
 import Domain.Seat;
-import Server.IServer;
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
+import Requests.BuyRequest;
+import Requests.GetAllEventsAvailableRequest;
+import Requests.GetAllSeatsForEventRequest;
+import Responses.BuyResponse;
+import Responses.GetAllEventsAvailableResponse;
+import Responses.GetAllSeatsAvailableResponse;
+
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Client extends UnicastRemoteObject {
+public class Client {
 
-    private IServer server;
-
-    public Client() throws RemoteException { }
-
-    public void setServer(IServer server) { this.server = server; }
-
-    private void showMenu(){
-        System.out.println();
-        System.out.println("---------------------------------");
-        System.out.println("1 -> Print all events available");
-        System.out.println("2 -> Buy tickets to an event");
-        System.out.println("3 -> Exit");
-        System.out.println("---------------------------------");
-        System.out.println();
+    private static List<Seat> avlSeats;
+    public static void showMenu(){
+        System.out.println("1.Print available products");
+        System.out.println("2.Buy product");
+        System.out.println("3.Exit");
     }
 
-    private void handlePrintEvents(){
-        List<Event> events_available = this.server.getAllEventsAvailable();
-        for (Event event: events_available) {
-            System.out.println(event.getId() + ": " + event.getDate() + " " +
-                    event.getTitle() + " " + event.getDescription());
+    public static void handlePrintResponse(GetAllEventsAvailableResponse response){
+        for(Event s : response.getResponse()){
+            System.out.println("Event{" +
+                    "id=" + s.getId() +
+                    ", date='" + s.getDate() + '\'' +
+                    ", title='" + s.getTitle() + '\'' +
+                    ", description='" + s.getDescription() + '\''+
+                    '}');
         }
     }
 
-    private void hadlePrintSeatsAvailable(int id_event){
-        List<Event> events_available = this.server.getAllEventsAvailable();
-        List<Seat> seats = new ArrayList<>();
-        for (Event event: events_available) {
-            if(event.getId() == id_event){
-                for (Seat s: event.getSeats()) {
-                    if(s.getAvailability())
-                        seats.add(s);
+    public static void handlePrintSeatsResponse(GetAllSeatsAvailableResponse response){
+        avlSeats = new ArrayList<>();
+        for(Seat s : response.getResponse()){
+            System.out.println(s);
+            avlSeats.add(s);
+        }
+    }
+
+    public static void handleBuyResponse(BuyResponse response){
+        if(response.getOkResponse()){
+            System.out.println("Success!");
+        }
+        else{
+            System.out.println("Internal error. Please retry");
+        }
+    }
+
+    public static BuyRequest Buy(int id){
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("clientName: ");
+        String name = in.next();
+
+
+
+        System.out.println("How many seats do you want to book?");
+        int nr_seats = Integer.parseInt(in.next());
+
+        System.out.println("Pick your seats");
+
+        List<Seat> seats_in = new ArrayList<>();
+        while (nr_seats > 0){
+            String seat_name = in.next();
+
+            Seat seat = new Seat("nonexistent","",0.0,false);
+            for(Seat s : avlSeats){
+                if(s.getName().equals(seat_name)){
+                    seat = s;
                 }
-                break;
+            }
+            if(seat.getType().equals("nonexistent"))
+                System.out.println("It seems like you typed a non-existent seat. Try harder next time");
+            else{
+                seats_in.add(seat);
+                nr_seats--;
             }
         }
 
-        for (Seat s: seats) {
-            System.out.println(s.getType() + " " + s.getName() + " " + s.getPrice());
-        }
+        return new BuyRequest(name, id, LocalDate.now().toString(),seats_in);
     }
 
-    private Seat getSeatOfGivenEvent(int id_event, String seat_name){
-        List<Event> events = this.server.getAllEventsAvailable();
-
-        Seat seat_found = new Seat("nonexistent","1A",0.0, false);
-
-        for (Event event: events) {
-            if(event.getId() == id_event){
-                for (Seat seat: event.getSeats()) {
-                    if(seat.getName().equals(seat_name)) {
-                        this.server.markSeat(id_event, seat);
-                        seat_found = seat;
-                        break;
-                    }
-                }
-                break;
-            }
-        }
-
-        return seat_found;
+    public static GetAllSeatsForEventRequest getSeats(int id){
+        return new GetAllSeatsForEventRequest(id);
     }
 
-    public void run(){
+    public static void main(String[] args) throws Exception{
+        Socket socket = new Socket("127.0.0.1", 4444);
+        ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
+        ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());
 
         Scanner scanner = new Scanner(System.in);
-        String s;
 
-        while (true){
-            this.showMenu();
-
+        String s = "";
+        while(!s.equals("3")){
+            showMenu();
             s = scanner.next();
 
-            if(s.equals("1"))
-                this.handlePrintEvents();
-
-            else if(s.equals("2")){
-                this.handlePrintEvents();
-
-                System.out.println("Pick an event");
-
-                int id_picked_event = Integer.parseInt(scanner.next());
-                this.hadlePrintSeatsAvailable(id_picked_event);
-
-                System.out.println("How many seats do you want to book?");
-                int nr_seats = Integer.parseInt(scanner.next());
-
-                System.out.println("Pick your seats");
-
-                List<Seat> seats_in = new ArrayList<>();
-                while (nr_seats > 0){
-                    String seat_name = scanner.next();
-
-                    Seat seat = this.getSeatOfGivenEvent(id_picked_event, seat_name);
-                    if(seat.getType().equals("nonexistent"))
-                        System.out.println("It seems like you typed a non-existent seat. Try harder next time");
-                    else{
-                        seats_in.add(seat);
-                        nr_seats--;
-                    }
-                }
-                String date = LocalDate.now().toString();
-                this.server.addSale(id_picked_event, date, seats_in);
+            if(s.equals("1")){
+                // send get event request
+                outputStream.writeObject(new GetAllEventsAvailableRequest());
+                // handle event response
+                handlePrintResponse((GetAllEventsAvailableResponse)inputStream.readObject());
 
             }
-            else if(s.equals("3"))
-                break;
-            else
-                System.out.println("Not a valid command, try harder");
-        }
-    }
+            else if (s.equals("2")){
+                Scanner in = new Scanner(System.in);
+                System.out.println("eventId: ");
+                Integer id = in.nextInt();
 
+
+                outputStream.writeObject(getSeats(id));
+
+                handlePrintSeatsResponse((GetAllSeatsAvailableResponse) inputStream.readObject());
+
+                // send buy request
+                outputStream.writeObject(Buy(id));
+                // handle buy response
+                handleBuyResponse((BuyResponse)inputStream.readObject());
+            }
+            else if (!s.equals("3")){
+                System.out.println("Not a valid option!! Please type a valid one this time :) ");
+            }
+
+            outputStream.reset();
+        }
+
+        inputStream.close();
+        outputStream.close();
+        socket.close();
+
+    }
 }

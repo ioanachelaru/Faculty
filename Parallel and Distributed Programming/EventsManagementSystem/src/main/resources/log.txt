@@ -1,0 +1,189 @@
+[ STARTED CHECKING -  2020/01/03 16:51:45 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:51:45 ]
+
+[ STARTED CHECKING -  2020/01/03 16:51:50 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:51:50 ]
+
+[ STARTED CHECKING -  2020/01/03 16:51:55 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:51:55 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:00 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:52:00 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:05 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:52:05 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:10 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:52:10 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:15 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/03 16:52:15 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:20 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 200.0
+[INFO] Sales Total - 200.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-03, 50.0]
+[4, TestClient, 2020-01-03, 50.0]
+[2, TestClient, 2020-01-03, 50.0]
+[4, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:20 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:25 ]
+
+[INFO] Last Sold - 200.0
+[INFO] Current Sold - 350.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-03, 50.0]
+[3, TestClient, 2020-01-03, 50.0]
+[4, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:25 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:30 ]
+
+[INFO] Last Sold - 350.0
+[INFO] Current Sold - 400.0
+[INFO] Sales Total - 50.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:30 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:35 ]
+
+[INFO] Last Sold - 400.0
+[INFO] Current Sold - 600.0
+[INFO] Sales Total - 200.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-03, 50.0]
+[2, TestClient, 2020-01-03, 50.0]
+[2, TestClient, 2020-01-03, 50.0]
+[3, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:35 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:40 ]
+
+[INFO] Last Sold - 600.0
+[INFO] Current Sold - 850.0
+[INFO] Sales Total - 250.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-03, 50.0]
+[1, TestClient, 2020-01-03, 50.0]
+[1, Ioana, 2020-01-03, 100.0]
+[4, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:40 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:45 ]
+
+[INFO] Last Sold - 850.0
+[INFO] Current Sold - 1000.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-03, 50.0]
+[4, TestClient, 2020-01-03, 50.0]
+[1, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:45 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:50 ]
+
+[INFO] Last Sold - 1000.0
+[INFO] Current Sold - 1150.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-03, 50.0]
+[3, TestClient, 2020-01-03, 50.0]
+[3, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:50 ]
+
+[ STARTED CHECKING -  2020/01/03 16:52:55 ]
+
+[INFO] Last Sold - 1150.0
+[INFO] Current Sold - 1315.0
+[INFO] Sales Total - 165.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-03, 50.0]
+[1, TestClient, 2020-01-03, 50.0]
+[1, ioana, 2020-01-03, 15.0]
+[4, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:52:55 ]
+
+[ STARTED CHECKING -  2020/01/03 16:53:00 ]
+
+[INFO] Last Sold - 1315.0
+[INFO] Current Sold - 1465.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-03, 50.0]
+[3, TestClient, 2020-01-03, 50.0]
+[4, TestClient, 2020-01-03, 50.0]
+
+[ FINISHED CHECKING -  2020/01/03 16:53:00 ]
+
