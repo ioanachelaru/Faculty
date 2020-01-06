@@ -6,7 +6,6 @@ import Requests.GetAllSeatsForEventRequest;
 import Responses.BuyResponse;
 import Responses.GetAllEventsAvailableResponse;
 import Responses.GetAllSeatsAvailableResponse;
-
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
