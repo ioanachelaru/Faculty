@@ -22,7 +22,10 @@
     "react-navigation-stack": "1.10.2"
   },
   "devDependencies": {
-    "babel-preset-expo": "^7.0.0"
+    "babel-preset-expo": "^7.0.0",
+    "react-native-dropdown-menu": "^2.0.0",
+    "react-native-maps": "^0.26.1",
+    "react-native-pie-chart": "^1.0.13"
   },
   "private": true
 }

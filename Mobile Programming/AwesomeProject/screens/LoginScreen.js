@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, TextInput, Button, Alert } from 'react-native';
+import { View, AsyncStorage,Image, TextInput, Button } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient'
 import styles from '../auxiliars/Styles'
 
@@ -12,6 +12,27 @@ export default class LoginScreen extends React.Component {
             password: '',
         };
     }
+
+    saveUserName = async UserName => {
+        try {
+            await AsyncStorage.setItem('UserName', UserName);
+        } catch (error) {
+            // Error retrieving data
+            console.log(error.message);
+        }
+    };
+
+    _signInAsync = async token => {
+        fetch('https://demo7402239.mockable.io/login')
+            .then((response) => response.json())
+            .then(async (responseJson) => {
+                await AsyncStorage.setItem('token', responseJson['token']);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
+    };
 
     render() {
         return (
@@ -31,6 +52,7 @@ export default class LoginScreen extends React.Component {
                             value={this.state.username}
                             onChangeText={(username) => this.setState({ username })}
                             placeholder={'Username'}
+                            placeholderTextColor={'#fff'}
                             style={styles.input}
                         />
                     </View>
@@ -40,25 +62,19 @@ export default class LoginScreen extends React.Component {
                             value={this.state.password}
                             onChangeText={(password) => this.setState({ password })}
                             placeholder={'Password'}
+                            placeholderTextColor={'#fff'}
                             secureTextEntry={true}
                             style={styles.input}
                         />
                     </View >
                     <View style={styles.button}>
                         <Button
-                            title={'Login'}
-                            color='#3C1053'
+                            color = {'#3C1053'}
+                            title={'LOGIN'}
                             onPress={()=>{
-                                // if(this.state.username.toString() === "Ioana")
-                                //     if(this.state.password.toString() === "Parola")
-                                //         this.props.navigation.navigate("Home");
-                                //     else{
-                                //         Alert.alert("Warning","Your password is incorrect");
-                                //     }
-                                // else {
-                                //     Alert.alert("Warning","This is not a valid account");
-                                // }
+                                this._signInAsync();
                                 this.props.navigation.navigate("Home");
+                                this.saveUserName(this.state.username)
                             }}
                         />
                     </View>

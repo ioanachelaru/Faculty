@@ -1,6 +1,6 @@
 import React, {StyleSheet} from 'react-native'
 
-export default StyleSheet.create({
+export default styles = StyleSheet.create({
 
     gradient: { flex: 1 },
 
