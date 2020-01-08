@@ -4,34 +4,26 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-
-import kotlinx.android.synthetic.main.item_row.view.*
+import kotlinx.android.synthetic.main.card_layout.view.*
 
 class ItemListAdapter(
-    private val mValues: List<Item>
-) : RecyclerView.Adapter<ItemListAdapter.ViewHolder>() {
+    private val articleList: List<Article>,
+    private val listener: (Article) -> Unit
+): RecyclerView.Adapter<ItemListAdapter.ArticleHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_row, parent, false)
-        return ViewHolder(view)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ArticleHolder(
+        LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false))
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = mValues[position]
-        holder.mIdView.text = item.id
-        holder.mContentView.text = item.text
-    }
+    override fun onBindViewHolder(holder: ArticleHolder, position: Int) = holder.bind(articleList[position], listener)
 
-    override fun getItemCount(): Int = mValues.size
+    override fun getItemCount() = articleList.size
 
-    inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
-        val mIdView: TextView = mView.item_number
-        val mContentView: TextView = mView.content
+    class ArticleHolder(articleView: View): RecyclerView.ViewHolder(articleView) {
 
-        override fun toString(): String {
-            return super.toString() + " '" + mContentView.text + "'"
+        fun bind(article: Article, listener: (Article) -> Unit) = with(itemView) {
+            title.text = article.title
+            body.text = article.body
+            setOnClickListener { listener(article) }
         }
     }
 }

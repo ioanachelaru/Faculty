@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-
+import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -21,13 +21,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -51,6 +44,11 @@ class MainActivity : AppCompatActivity() {
         if (username.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
             if(username.text.toString().equals(username_value))
                 if(password.text.toString().equals(password_value)) {
+
+                    // bouncing animation
+                    val animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+                    buttonLogin.startAnimation(animation)
+
                     val intent = Intent(this, SecondActivity::class.java)
                     startActivity(intent)
                 }

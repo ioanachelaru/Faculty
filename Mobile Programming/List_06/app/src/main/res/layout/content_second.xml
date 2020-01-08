@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_second">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/itemList"
+        android:id="@+id/articles_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,4 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layoutManager="LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/buttonToMap"
+        android:text="Go to map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/articles_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
