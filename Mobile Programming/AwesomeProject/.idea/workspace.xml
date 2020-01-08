@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a893c454-a382-49fe-93e9-df69f8a322bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/Item.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/ItemListAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/res/layout/content_second.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/res/layout/item_row.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/ChartActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/activity_chart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyKotlinApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../MyKotlinApp/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/SecondActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MyKotlinApp/app/src/main/java/com/example/mykotlinapp/SecondActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MapsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MapsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/SecondActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/SecondActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/content_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/content_second.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="135" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="135" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -185,7 +182,7 @@
       <workItem from="1575124752672" duration="762000" />
       <workItem from="1575464425013" duration="186000" />
       <workItem from="1576055023818" duration="1479000" />
-      <workItem from="1578427264760" duration="11324000" />
+      <workItem from="1578427264760" duration="11325000" />
     </task>
     <task id="LOCAL-00001" summary="Changed structure of HomeScreen">
       <created>1576068426002</created>
@@ -198,10 +195,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55188000" />
+    <option name="totallyTimeSpent" value="55189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18440185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -319,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="255">
+          <caret line="135" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="135" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>

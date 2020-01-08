@@ -9,12 +9,14 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.main.activity_second.*
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     var location: Location?=null
     private var mMap: GoogleMap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -29,6 +31,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 mMap?.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14f))
             }
         })
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 

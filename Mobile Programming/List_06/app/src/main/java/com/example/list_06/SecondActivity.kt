@@ -30,6 +30,11 @@ class SecondActivity : AppCompatActivity() {
             val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
+
+        buttonToChart.setOnClickListener {
+            val intent = Intent(this, ChartActivity::class.java)
+            startActivity(intent)
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         showArticles()
@@ -45,7 +50,6 @@ class SecondActivity : AppCompatActivity() {
                 { result -> setupRecycler(result) },
                 { error -> Log.e("ERROR", error.message) }
             )
-
     }
 
     private fun showArticle(id: Int) {
