@@ -1,10 +1,12 @@
 import DropdownMenu from 'react-native-dropdown-menu';
-import { View, ActivityIndicator, ScrollView, Text, FlatList, NetInfo, Platform, AsyncStorage, Button } from "react-native";
+import { View, Alert, ActivityIndicator, ScrollView, Text, FlatList, NetInfo, Platform, AsyncStorage, Button } from "react-native";
 import React from "react";
 import "../auxiliars/Styles.js";
 import MyPieChart from "../charts/piechart";
 
+// var connected = false;
 export default class Demo extends React.Component {
+
 
     constructor(props) {
         super(props);
@@ -12,10 +14,12 @@ export default class Demo extends React.Component {
             isLoading: true,
             dataForList: [],
             CurrentUserName: '',
-            token:''
+            token:'',
+            connected: false
         };
 
         this._bootstrapAsync();
+
     }
 
     getSeason(season) {
@@ -34,18 +38,42 @@ export default class Demo extends React.Component {
             });
     }
 
+    componentWillMount() {
+        this.CheckConnectivity();
+    }
+
     componentDidMount() {
-        if(this.CheckConnectivity()){
-            return (
-                <View style={styles.homeView}>
-                    <Text>There is no internet!!!</Text>
-                </View>
-            )
-        }else{
-            this.getSeason("1");
-            AsyncStorage.getItem('UserName').then((value) => this.setState({ CurrentUserName: value }));
-            AsyncStorage.getItem('token').then((value) => this.setState({ token:value, }))
-        }
+        this.createLocalStorage();
+        this.getSeason("1");
+        AsyncStorage.getItem('UserName').then((value) => this.setState({ CurrentUserName: value }));
+        AsyncStorage.getItem('token').then((value) => this.setState({ token:value, }))
+    }
+
+    getEpisodesForLocalStorage(season){
+        fetch('http://www.omdbapi.com/?apikey=363ab14c&t=Game of Thrones&Season='+season)
+            .then((response) => response.json())
+            .then(async (responseJson) => {
+                await AsyncStorage.setItem(season, JSON.stringify(responseJson['Episodes']));
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+    createLocalStorage() {
+        this.getEpisodesForLocalStorage("1");
+        this.getEpisodesForLocalStorage("2");
+        this.getEpisodesForLocalStorage("3");
+        this.getEpisodesForLocalStorage("4");
+        this.getEpisodesForLocalStorage("5");
+        this.getEpisodesForLocalStorage("6");
+        this.getEpisodesForLocalStorage("7");
+        this.getEpisodesForLocalStorage("8");
+    }
+
+    async getEpisodesFromLocal(season) {
+        await AsyncStorage.getItem(season).then((value) => {
+            this.setState({dataForList: value,})
+        })
     }
 
     _bootstrapAsync =  () => {
@@ -61,9 +89,15 @@ export default class Demo extends React.Component {
         if (Platform.OS === "android") {
             NetInfo.isConnected.fetch().then(isConnected => {
                 if (isConnected) {
-                    // Alert.alert("You are online!");
+                    this.setState({
+                        connected: true,
+                    });
+                    // connected = true;
                 } else {
-                    // Alert.alert("You are offline!");
+                    this.setState({
+                        connected: false,
+                    });
+                    // connected = false;
                 }
             });
         } else {
@@ -81,10 +115,16 @@ export default class Demo extends React.Component {
             this.handleFirstConnectivityChange
         );
 
-        if (isConnected === false) {
-            // Alert.alert("You are offline!");
+        if (isConnected) {
+            this.setState({
+                connected: true,
+            });
+            // connected = true;
         } else {
-            // Alert.alert("You are online!");
+            this.setState({
+                connected: false,
+            });
+            // connected = false;
         }
     };
 
@@ -111,10 +151,15 @@ export default class Demo extends React.Component {
                             activityTintColor={'#3C1070'}
                             optionTextStyle={{color: '#333333'}}
                             titleStyle={{color: '#333333'}}
-                            handler={(selection, row) => this.getSeason(data[selection][row].split(" ")[1])}
+                            handler={(selection, row) => {
+                                if(this.state.connected){
+                                    this.getSeason(data[selection][row].split(" ")[1])
+                                }else {
+                                    this.getEpisodesFromLocal(data[selection][row].split(" ")[1])
+                                }
+                            }}
                             data={data}
                         >
-
                             <View style={{flex: 1}}>
                                 <FlatList style={styles.list}
                                           data={this.state.dataForList}
@@ -137,8 +182,8 @@ export default class Demo extends React.Component {
                         </View>
                         <View style={styles.button}>
                             <Button
-                                color = {'#3C1053'}
                                 title={'Go To Map'}
+                                color = {'#3C1053'}
                                 onPress={()=>{
                                     this.props.navigation.navigate("Harta");
                                 }}
