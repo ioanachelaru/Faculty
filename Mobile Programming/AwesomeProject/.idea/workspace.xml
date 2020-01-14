@@ -2,14 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a893c454-a382-49fe-93e9-df69f8a322bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/ChartActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/activity_chart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Client/Client.Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Client/Client.Client.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Client/Client.Client.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Domain/Domain.Domain.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Domain/Domain.Domain.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Domain/Domain.Domain.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/EventsManagementSystem.EventsManagementSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/EventsManagementSystem.EventsManagementSystem.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/EventsManagementSystem.EventsManagementSystem.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Server/Server.Server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Server/Server.Server.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/modules/Server/Server.Server.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List_06/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MapsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MapsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/SecondActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/SecondActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/content_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/res/layout/content_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../List_06/app/src/main/java/com/example/list_06/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/Client/out/production/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/Client/out/production/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/Server/out/production/classes/META-INF/Server.Server.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/src/main/resources/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/EventsManagementSystem/src/main/resources/log.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,13 +45,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="135" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="135" />
+            <state relative-caret-position="850">
+              <caret line="101" column="68" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/LoginScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/charts/piechart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="45" column="35" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/screens/Harta.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +135,8 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -182,7 +243,10 @@
       <workItem from="1575124752672" duration="762000" />
       <workItem from="1575464425013" duration="186000" />
       <workItem from="1576055023818" duration="1479000" />
-      <workItem from="1578427264760" duration="11325000" />
+      <workItem from="1578427264760" duration="14698000" />
+      <workItem from="1578600998785" duration="5000" />
+      <workItem from="1578984033430" duration="117000" />
+      <workItem from="1578984362354" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="Changed structure of HomeScreen">
       <created>1576068426002</created>
@@ -195,13 +259,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55189000" />
+    <option name="totallyTimeSpent" value="59649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18440185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18241903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -215,7 +279,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12011173" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2932961" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,9 +302,7 @@
     <entry file="file://$PROJECT_DIR$/babel.config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/material-kit-react-native-master/material-kit-react-native-master/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/material-kit-react-native-master/material-kit-react-native-master/App.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -262,32 +324,6 @@
     <entry file="file://$PROJECT_DIR$/assets/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/charts/piechart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screens/Harta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/navigation/Navigate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -307,8 +343,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/LoginScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="47" />
+        <state relative-caret-position="1156">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/piechart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-maps/lib/android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5236">
+          <caret line="5167" column="4" selection-start-line="5167" selection-start-column="4" selection-end-line="5167" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -317,10 +386,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="135" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="135" />
+        <state relative-caret-position="850">
+          <caret line="101" column="68" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/Harta.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

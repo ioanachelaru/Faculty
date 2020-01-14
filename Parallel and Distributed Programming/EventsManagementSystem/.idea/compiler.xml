@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Client.Client.main" target="1.8" />
+      <module name="Client.Client.test" target="1.8" />
+      <module name="Domain.Domain.main" target="1.8" />
+      <module name="Domain.Domain.test" target="1.8" />
+      <module name="EventsManagementSystem.EventsManagementSystem.main" target="1.8" />
+      <module name="EventsManagementSystem.EventsManagementSystem.test" target="1.8" />
+      <module name="Server.Server.main" target="1.8" />
+      <module name="Server.Server.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

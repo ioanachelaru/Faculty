@@ -187,3 +187,264 @@
 
 [ FINISHED CHECKING -  2020/01/03 16:53:00 ]
 
+[ STARTED CHECKING -  2020/01/10 12:55:51 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/10 12:55:51 ]
+
+[ STARTED CHECKING -  2020/01/10 12:55:56 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 0.0
+[INFO] Sales Total - 0.0
+[INFO] Sales:
+
+
+[ FINISHED CHECKING -  2020/01/10 12:55:56 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:01 ]
+
+[INFO] Last Sold - 0.0
+[INFO] Current Sold - 100.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-10, 50.0]
+[4, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:01 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:06 ]
+
+[INFO] Last Sold - 100.0
+[INFO] Current Sold - 250.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:06 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:11 ]
+
+[INFO] Last Sold - 250.0
+[INFO] Current Sold - 350.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:11 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:16 ]
+
+[INFO] Last Sold - 350.0
+[INFO] Current Sold - 450.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:16 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:21 ]
+
+[INFO] Last Sold - 450.0
+[INFO] Current Sold - 550.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:21 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:26 ]
+
+[INFO] Last Sold - 550.0
+[INFO] Current Sold - 700.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:26 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:31 ]
+
+[INFO] Last Sold - 700.0
+[INFO] Current Sold - 900.0
+[INFO] Sales Total - 200.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:31 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:36 ]
+
+[INFO] Last Sold - 900.0
+[INFO] Current Sold - 1050.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:36 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:41 ]
+
+[INFO] Last Sold - 1050.0
+[INFO] Current Sold - 1100.0
+[INFO] Sales Total - 50.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:41 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:47 ]
+
+[INFO] Last Sold - 1100.0
+[INFO] Current Sold - 1300.0
+[INFO] Sales Total - 200.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:47 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:52 ]
+
+[INFO] Last Sold - 1300.0
+[INFO] Current Sold - 1435.0
+[INFO] Sales Total - 135.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[1, ioana, 2020-01-10, 35.0]
+[4, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:52 ]
+
+[ STARTED CHECKING -  2020/01/10 12:56:57 ]
+
+[INFO] Last Sold - 1435.0
+[INFO] Current Sold - 1585.0
+[INFO] Sales Total - 150.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[4, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:56:57 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:02 ]
+
+[INFO] Last Sold - 1585.0
+[INFO] Current Sold - 1800.0
+[INFO] Sales Total - 215.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-10, 50.0]
+[2, ioana, 2020-01-10, 15.0]
+[2, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:02 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:07 ]
+
+[INFO] Last Sold - 1800.0
+[INFO] Current Sold - 1900.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-10, 50.0]
+[4, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:07 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:12 ]
+
+[INFO] Last Sold - 1900.0
+[INFO] Current Sold - 2000.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[4, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:12 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:17 ]
+
+[INFO] Last Sold - 2000.0
+[INFO] Current Sold - 2200.0
+[INFO] Sales Total - 200.0
+[INFO] Sales:
+
+[1, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+[1, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:17 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:22 ]
+
+[INFO] Last Sold - 2200.0
+[INFO] Current Sold - 2300.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[2, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:22 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:27 ]
+
+[INFO] Last Sold - 2300.0
+[INFO] Current Sold - 2400.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-10, 50.0]
+[3, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:27 ]
+
+[ STARTED CHECKING -  2020/01/10 12:57:32 ]
+
+[INFO] Last Sold - 2400.0
+[INFO] Current Sold - 2500.0
+[INFO] Sales Total - 100.0
+[INFO] Sales:
+
+[3, TestClient, 2020-01-10, 50.0]
+[2, TestClient, 2020-01-10, 50.0]
+
+[ FINISHED CHECKING -  2020/01/10 12:57:32 ]
+

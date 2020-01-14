@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client.Client.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client.Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client.Client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client.Client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client.Client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client.Client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain.Domain.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.iml" filepath="$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.test.iml" filepath="$PROJECT_DIR$/.idea/modules/EventsManagementSystem.EventsManagementSystem.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server.Server.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server.Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server.Server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server.Server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server.Server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server.Server.test.iml" />
+    </modules>
+  </component>
+</project>

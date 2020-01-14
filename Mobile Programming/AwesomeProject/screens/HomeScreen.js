@@ -39,6 +39,7 @@ export default class Demo extends React.Component {
     }
 
     componentWillMount() {
+        console.log("will mount");
         this.CheckConnectivity();
     }
 
@@ -92,11 +93,13 @@ export default class Demo extends React.Component {
                     this.setState({
                         connected: true,
                     });
+                    console.log("connected: "+this.state.connected);
                     // connected = true;
                 } else {
                     this.setState({
                         connected: false,
                     });
+                    console.log("connected: "+this.state.connected);
                     // connected = false;
                 }
             });
