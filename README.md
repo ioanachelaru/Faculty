@@ -14,3 +14,5 @@
 * [Parallel and Distributed Programming](https://github.com/ioanachelaru/Faculty/tree/master/Parallel%20and%20Distributed%20Programming)
 * [Mobile Programming](https://github.com/ioanachelaru/Faculty/tree/master/Mobile%20Programming)
 * [Human-Computer interaction](https://github.com/ioanachelaru/Memory_game)
+
+:open_file_folder: 6th Semester:
