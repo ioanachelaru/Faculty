@@ -17,3 +17,4 @@
 
 :open_file_folder: 6th Semester:
 * [Software System Verification and Validation]()
+* [Numerical Calculus]()
