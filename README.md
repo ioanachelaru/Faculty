@@ -16,3 +16,4 @@
 * [Human-Computer interaction](https://github.com/ioanachelaru/Memory_game)
 
 :open_file_folder: 6th Semester:
+* [Software System Verification and Validation]()
