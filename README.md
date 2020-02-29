@@ -17,4 +17,4 @@
 
 :open_file_folder: 6th Semester:
 * [Software System Verification and Validation]()
-* [Numerical Calculus]()
+* [Numerical Calculus](https://github.com/ioanachelaru/Faculty/tree/master/Numerical%20Calculus)
