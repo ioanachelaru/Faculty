@@ -16,5 +16,5 @@
 * [Human-Computer interaction](https://github.com/ioanachelaru/Memory_game)
 
 :open_file_folder: 6th Semester:
-* [Software System Verification and Validation]()
+* [Software System Verification and Validation](https://github.com/ioanachelaru/Software-systems-verification-and-validation)
 * [Numerical Calculus](https://github.com/ioanachelaru/Faculty/tree/master/Numerical%20Calculus)
