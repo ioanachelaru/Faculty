@@ -8,8 +8,7 @@ function lab6_probl_prac_2()
     y = @(x)exp(x.^2-1);
     disp('Valoarea functiei in 1.25:');
     % vom determina valoarea polinomului de interpolare Lagrange in punctul
-    % x = 1.25, pentru nodurile nodes date si functia data, folosind
-    % P4_InterpolLagrangeFdat.
+    % x = 1.25, pentru nodurile nodes date si functia data.
     disp(lab6_problema4(1.25, y, 4, nodes));
     % vom delimita eroarea conform formulei : |(Rnf)(x)|<= M / (m+1)! * |u(x)|
     delim = delimitateError(1.25, nodes);
